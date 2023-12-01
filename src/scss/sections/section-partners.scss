@@ -1,0 +1,41 @@
+.section-partners {
+	padding: 160px 0;
+	background-color: $color-gray-100;
+
+	&__title {
+		text-align: center;
+		margin: 0 0 24px 0;
+	}
+
+	&__subtitle {
+		text-align: center;
+		margin: 0 auto 52px;
+		max-width: 660px;
+	}
+
+	&__logos {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		flex-wrap: wrap;
+		max-width: 1030px;
+		margin: 0 auto;
+	}
+
+	&__logo {
+		flex: 0 0 330px;
+		height: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px 35px;
+		border-radius: 8px;
+		border: 1px solid $color-gray-200;
+		background: $color-gray-100;
+
+		img {
+			pointer-events: none;
+		}
+	}
+}

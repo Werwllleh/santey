@@ -1,0 +1,55 @@
+.section-procedure {
+	padding: 140px 0 130px;
+
+	&__title {
+		text-align: center;
+		margin: 0 0 52px 0;
+	}
+
+	&__steps {
+		display: flex;
+		flex-direction: column;
+		max-width: 1030px;
+		align-items: flex-start;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	&__step {
+		display: flex;
+		align-items: flex-start;
+		gap: 24px;
+		padding: 32px 0;
+		width: 100%;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $color-gray-200;
+		}
+
+		&-number {
+			flex: 0 0 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 32px;
+			height: 32px;
+			color: $color-gray-600;
+			padding: 7px 6px 5px 6px;
+			border-radius: 24px;
+			border: 1px solid $color-gray-200;
+			background-color: $color-white;
+		}
+
+		&-info {
+			flex: 0 1 790px;
+		}
+
+		&-title {
+			padding: 4px 0 0 0;
+		}
+
+		&-text {
+			margin: 24px 0 0 0;
+		}
+	}
+}
