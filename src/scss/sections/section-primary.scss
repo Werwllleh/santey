@@ -1,0 +1,42 @@
+.main-section-primary {
+	position: relative;
+
+	&__info {
+		padding: 620px 0 120px;
+
+		&-title {
+			max-width: 1000px;
+			margin: 0 0 36px 0;
+		}
+
+		&-buttons {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+		}
+
+	}
+
+	&__btn-request {
+		max-width: 240px;
+	}
+
+	&__btn-question {
+		border-radius: 6px;
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		background: rgba(255, 255, 255, 0.08);
+		backdrop-filter: blur(16px);
+	}
+
+	.main-section-primary__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-image: url(../images/bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

@@ -1,0 +1,36 @@
+-
+	var menu = [
+		{
+			name: 'О нас',
+			link: '#'
+		},
+		{
+			name: 'Услуги',
+			link: '#'
+		},
+		{
+			name: 'Выполненные заказы',
+			link: '#'
+		},
+		{
+			name: 'Помощь с поиском',
+			link: '#'
+		},
+		{
+			name: 'Контакты',
+			link: '#'
+		},
+	]
+
+header.header
+	.header__body
+		.header__logo
+			+svg("logo")
+		nav.header__nav
+			ul.header__nav-list
+				for item in menu
+					li.header__nav-item
+						a.header__nav-link(href= item.link )= item.name
+		.header__right
+			a.header__right-phone(href="tel:+74993488749") +7 (499) 348-87-49
+			a.header__right-button.btn.btn-blue.btn-m.button-text-m(data-button="request") Оставить заявку

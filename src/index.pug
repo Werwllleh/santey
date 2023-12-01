@@ -1,0 +1,17 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	//-
+
+block content
+	//- include pug/data
+		//- .site
+	include pug/components/header
+	main.main
+		//include pug/pages/main
+		include pug/sections/section-primary
+		include pug/sections/section-about
+	include pug/components/footer
