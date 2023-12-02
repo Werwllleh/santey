@@ -1,0 +1,21 @@
+// section-ask-question
+section.section-ask-question#ask-question
+	.container
+		.section-ask-question__body
+			.section-ask-question__title
+				h2.h2.section-ask-question__title Остались вопросы? <br> Задайте их нашему менеджеру
+			form.section-ask-question__form.form
+				.form__fields
+					.section-ask-question__form-field.form__field
+						.form__field-title.caption Ваше имя
+						input(type="text").form__field-input
+					.section-ask-question__form-field.form__field
+						.form__field-title.caption Номер телефона
+						input(type="tel").form__field-input
+					.section-ask-question__form-field.form__field
+						.form__field-title.caption Ваш вопрос
+						input(type="textarea").form__field-input
+					button.btn.btn-blue.btn-m.form__field-submit(type="submit" data-button="Задать вопрос") Задать вопрос
+				.form__footer.caption
+					| Нажимая на кнопку «Задать вопрос», Вы даете согласие на обработку 
+					a(href="#") персональных данных

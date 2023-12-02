@@ -43,6 +43,7 @@ body {
 	flex-direction: column;
 	//justify-content: center;
 	overflow: hidden;
+	background-color: $color-gray-100;
 }
 
 h1, h2, h3, h4, h5 {
@@ -218,3 +219,166 @@ input, button, textarea {
 	line-height: 1.11; /* 111.111% */
 	text-transform: uppercase;
 }
+
+.social-btn {
+	display: block;
+	padding: 12px;
+	width: 56px;
+	height: 56px;
+	border-radius: 48px;
+	border: 1px solid $color-gray-200;
+	background-color: $color-gray-100;
+	transition: background-color $duration-normal;
+
+	svg {
+		width: 32px;
+		height: 32px;
+		fill: #6C757D;
+
+		transition: fill $duration-normal;
+	}
+
+	&:hover {
+
+		svg {
+			fill: $color-white;
+		}
+	}
+}
+
+.whats-app-btn {
+
+	&:hover {
+		background-color: #25D366;
+	}
+
+}
+.vk-app-btn {
+
+	&:hover {
+		background-color: #07F;
+	}
+}
+
+.form {
+
+	&__fields {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	&__field {
+
+		&-title {
+			margin: 0 0 8px 0;
+			color: $color-gray-800;
+		}
+
+		&-row {
+			display: flex;
+			gap: 12px;
+			justify-content: space-between;
+
+			.form__field {
+				flex: 0 1 50%;
+			}
+		}
+
+		&-input {
+			width: 100%;
+			outline: none;
+			padding: 17px 16px 15px 16px;
+			border-radius: 8px;
+			border: 1px solid $color-gray-200;
+			background-color: $color-gray-100;
+			color: $color-gray-400;
+			transition: border $duration-normal, background-color $duration-normal, color $duration-normal;
+
+			//&::placeholder {
+			//	color: $color-gray-400;
+			//}
+
+			&[type='textarea'] {
+				min-height: 128px;
+			}
+
+			&:hover {
+				border: 1px solid $color-gray-400;
+			}
+
+			&:focus {
+				color: $color-gray-900;
+				border: 1px solid $color-gray-600;
+			}
+
+			&.notEmpty {
+				color: $color-gray-900;
+			}
+
+			&.error {
+				border: 1px solid #E23D28;
+				background: #FDF1F0;
+			}
+		}
+
+		&-submit {
+			max-width: none;
+			width: 100%;
+		}
+	}
+
+	&__footer {
+		margin: 19px 0 0 0;
+		color: $color-gray-500;
+
+		a {
+			color: $color-gray-600;
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+	}
+}
+
+//.input-field {
+//
+//	&__title {
+//		margin: 0 0 8px 0;
+//		color: $color-gray-800;
+//	}
+//
+//	&__submit {
+//		max-width: none;
+//		width: 100%;
+//	}
+//
+//
+//
+//	&__input {
+//		width: 100%;
+//		outline: none;
+//		padding: 17px 16px 15px 16px;
+//		border-radius: 8px;
+//		border: 1px solid $color-gray-200;
+//		background-color: $color-gray-100;
+//		color: $color-gray-400;
+//		transition: border $duration-normal, background-color $duration-normal, color $duration-normal;
+//
+//		//&::placeholder {
+//		//	color: $color-gray-400;
+//		//}
+//
+//		&[type='textarea'] {
+//			min-height: 128px;
+//		}
+//
+//		&:hover {
+//			border: 1px solid $color-gray-400;
+//		}
+//
+//		&:focus {
+//			color: $color-gray-900;
+//			border: 1px solid $color-gray-600;
+//		}
+//	}
+//}

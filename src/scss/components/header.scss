@@ -8,7 +8,8 @@
 	width: 100%;
 	margin: 0 auto;
 	padding: 16px 32px;
-	transition: max-width $duration-normal, padding $duration-normal;
+	background-color: transparent;
+	transition: max-width $duration-normal, padding $duration-normal, background-color $duration-normal;
 	z-index: 2;
 
 	&.fixed {

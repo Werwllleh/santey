@@ -1,17 +1,88 @@
 .footer {
 	display: flex;
 	margin-top: auto;
-	padding: 20px 30px;
 	width: 100%;
+	padding: 160px 0 0 0;
+	background-color: $color-gray-100;
 
-	&__developer {
-		margin-left: auto;
-		font-size: 12px;
-		line-height: 16px;
+	&-content {
+		display: flex;
+		gap: 10px;
+
+		&__column {
+			flex: 0 1 50%;
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+		}
+
+		&__info {
+
+
+			&-contact {
+				color: $color-gray-900;
+				font-family: $font-family-roboto-condensed;
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 1.22;
+				letter-spacing: -0.36px;
+				text-transform: uppercase;
+			}
+
+			&-note {
+				color: $color-gray-600;
+			}
+
+			&-socials {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+
+				&-btn {
+
+				}
+			}
+
+		}
+
+		&__address {
+
+
+			&-title {
+				margin: 0 0 12px 0;
+			}
+
+			&-info {
+				color: $color-gray-600;
+				max-width: 500px;
+			}
+		}
+
+
 	}
 
-	&__copy {
-		font-size: 12px;
-		line-height: 16px;
+	&-bottom {
+		margin: 160px 0 0 0;
+		display: flex;
+		align-items: center;
+		padding: 40px 0;
+		color: $color-gray-500;
+		font-family: $font-family-golos;
+		font-size: 15px;
+		line-height: 1.2;
+		border-top: 1px solid $color-gray-200;
+
+		&__left {
+			flex: 0 1 50%;
+			display: flex;
+			align-items: center;
+			gap: 32px;
+		}
+
+		&__right {
+			flex: 0 1 50%;
+
+		}
 	}
 }

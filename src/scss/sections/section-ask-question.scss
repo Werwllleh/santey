@@ -1,0 +1,27 @@
+.section-ask-question {
+	padding: 160px 0 140px;
+	background-color: $color-white;
+	border-radius: 0 0 12px 12px;
+
+	&__body {
+		display: flex;
+		gap: 15px;
+	}
+
+	&__title {
+		flex: 0 1 50%;
+
+		h2 {
+			max-width: 500px;
+		}
+	}
+
+	&__form {
+		flex: 0 1 500px;
+
+		&-field {
+
+
+		}
+	}
+}
