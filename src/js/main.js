@@ -1,5 +1,6 @@
 import './vendor';
 import './helpers';
+import './sliders';
 import './components/social';
 import {ieFix} from './vendor/ie-fix';
 import {vhFix} from './vendor/vh-fix';
@@ -8,6 +9,7 @@ import {actualYear} from './modules/actualYear';
 import header from './components/header';
 import footer from './components/footer';
 import form from './components/form';
+import truncateText from './components/truncateText';
 
 
 
