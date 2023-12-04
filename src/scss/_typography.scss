@@ -18,6 +18,12 @@
 	line-height: 1.22;
 	letter-spacing: 0.36px;
 	text-transform: uppercase;
+
+	@include mobile() {
+		font-size: 26px;
+		line-height: 1.31;
+		letter-spacing: 0.26px;
+	}
 }
 
 .h3 {
@@ -29,6 +35,12 @@
 	line-height: 1.18;
 	letter-spacing: 0.11px;
 	text-transform: uppercase;
+
+	@include mobile() {
+		font-size: 20px;
+		line-height: 1.2;
+		letter-spacing: 0.1px;
+	}
 }
 
 .text-m-compact {

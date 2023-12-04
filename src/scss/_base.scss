@@ -266,6 +266,10 @@ input, button, textarea {
 		display: flex;
 		flex-direction: column;
 		gap: 24px;
+
+		@include mobile() {
+			gap: 20px;
+		}
 	}
 
 	&__field {

@@ -3,9 +3,18 @@
 	background-color: $color-white;
 	border-radius: 0 0 12px 12px;
 
+	@include mobile() {
+		padding: 140px 0 120px;
+	}
+
 	&__body {
 		display: flex;
 		gap: 15px;
+
+		@include tablet() {
+			flex-direction: column;
+			gap: 40px;
+		}
 	}
 
 	&__title {

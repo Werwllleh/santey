@@ -5,19 +5,29 @@
 	padding: 160px 0 0 0;
 	background-color: $color-gray-100;
 
+	@include mobile() {
+		padding: 120px 0 0 0;
+	}
+
 	&-content {
 		display: flex;
 		gap: 10px;
+
+		@include tablet() {
+			flex-direction: column;
+			gap: 80px;
+		}
 
 		&__column {
 			flex: 0 1 50%;
 			display: flex;
 			flex-direction: column;
 			gap: 40px;
+
+
 		}
 
 		&__info {
-
 
 			&-contact {
 				color: $color-gray-900;
@@ -28,6 +38,13 @@
 				line-height: 1.22;
 				letter-spacing: -0.36px;
 				text-transform: uppercase;
+
+				@include mobile() {
+					font-size: 26px;
+					font-weight: 500;
+					line-height: 1.31;
+					letter-spacing: -0.26px;
+				}
 			}
 
 			&-note {
@@ -66,6 +83,7 @@
 		margin: 160px 0 0 0;
 		display: flex;
 		align-items: center;
+		gap: 10px;
 		padding: 40px 0;
 		color: $color-gray-500;
 		font-family: $font-family-golos;
@@ -73,14 +91,36 @@
 		line-height: 1.2;
 		border-top: 1px solid $color-gray-200;
 
+		@include tablet() {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		@include mobile() {
+			gap: 32px;
+			margin: 80px 0 0 0;
+		}
+
 		&__left {
 			flex: 0 1 50%;
 			display: flex;
 			align-items: center;
 			gap: 32px;
+			white-space: nowrap;
+
+			@include mobile() {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 16px;
+			}
+
+			&-copyright {
+				//white-space: nowrap;
+			}
 		}
 
 		&__right {
+			white-space: nowrap;
 			flex: 0 1 50%;
 
 		}
