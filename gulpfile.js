@@ -1,4 +1,5 @@
 let gulp = require('gulp');
+let ghPages = require('gulp-gh-pages');
 let gulpLoadPlugins = require('gulp-load-plugins');
 let yargs = require('yargs');
 let path = require('path');
@@ -105,6 +106,10 @@ function svgoConfig(minify = argv.minifySvg) {
 	};
 }
 
+gulp.task('deploy', function() {
+	return gulp.src('./build/**/*')
+		.pipe(ghPages());
+});
 gulp.task('copy', () => {
 	return gulp.src([
 		'src/resources/**/*.*',
