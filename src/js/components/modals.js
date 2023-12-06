@@ -3,29 +3,14 @@ const modalLinks = document.querySelectorAll('[data-modal]')
 if (modalLinks.length) {
 	modalLinks.forEach((link) => {
 		link.addEventListener('click', (e) => {
-			const modalId = `#modal-${link.dataset.modal}`
-
 			e.preventDefault()
-
-			if (link.dataset.modal === 'phone' && window.innerWidth < 564) {
-				openModal(modalId)
-			} else if (link.dataset.modal !== 'phone') {
-				openModal(modalId)
-			} else {
-				return false;
-			}
-
-
 			const isModalMobileOnly = link.dataset.modalMobile
 
 			if (isModalMobileOnly && window.innerWidth > 1024) {
 				return;
 			}
 
-
-
-
-
+			const modalId = `#modal-${link.dataset.modal}`
 			openModal(modalId)
 
 		})
