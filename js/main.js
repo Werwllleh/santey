@@ -328,19 +328,12 @@ var modalLinks = document.querySelectorAll('[data-modal]');
 if (modalLinks.length) {
   modalLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
-      var modalId = "#modal-".concat(link.dataset.modal);
       e.preventDefault();
-      if (link.dataset.modal === 'phone' && window.innerWidth < 564) {
-        openModal(modalId);
-      } else if (link.dataset.modal !== 'phone') {
-        openModal(modalId);
-      } else {
-        return false;
-      }
       var isModalMobileOnly = link.dataset.modalMobile;
       if (isModalMobileOnly && window.innerWidth > 1024) {
         return;
       }
+      var modalId = "#modal-".concat(link.dataset.modal);
       openModal(modalId);
     });
   });
