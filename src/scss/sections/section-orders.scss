@@ -9,10 +9,29 @@
 		align-items: center;
 		margin: 0 0 46px 0;
 		height: 56px;
+
+		@include desktop() {
+			margin: 0 0 40px 0;
+			height: auto;
+		}
 	}
 
 	&__slides {
 
+	}
+
+	&__navigation {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: auto;
+		width: 100%;
+
+		@include tablet() {
+			position: relative;
+			margin: 24px auto 0 auto;
+
+		}
 	}
 
 	&__slider {
@@ -30,14 +49,37 @@
 		border: 1px solid $color-gray-200;
 		background-color: $color-white;
 
+		@include desktop() {
+			flex-direction: column;
+			gap: 40px;
+		}
+
+		&-header {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+
+			@include desktop() {
+				flex-direction: column-reverse;
+			}
+		}
+
 		&-left {
 			flex: 0 1 470px;
+
+			@include desktop() {
+				flex: 0 1 auto;
+			}
 		}
 		&-right {
 			flex: 0 1 650px;
 			display: flex;
 			flex-direction: column;
 			gap: 20px;
+
+			@include desktop() {
+				flex: 0 1 auto;
+			}
 		}
 
 		&-title {
@@ -48,7 +90,6 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 6px;
-			margin: 16px 0 0 0;
 		}
 
 		&-tag {

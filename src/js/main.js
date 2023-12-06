@@ -10,6 +10,7 @@ import header from './components/header';
 import footer from './components/footer';
 import form from './components/form';
 import truncateText from './components/truncateText';
+import modals from './components/modals';
 
 
 

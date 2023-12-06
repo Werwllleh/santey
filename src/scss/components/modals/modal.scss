@@ -1,0 +1,132 @@
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 888;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	overflow-y: auto;
+
+	&--show {
+		display: flex;
+	}
+
+	&__window {
+		position: relative;
+		display: block;
+		width: 100%;
+		margin: auto 0 0 0;
+		background-color: $color-white;
+		border-radius: 12px 12px 0 0;
+		box-shadow: 0 0 48px 0 rgba(33, 37, 41, 0.12);
+		transition: transform 0.2s ease-in-out, opacity 0.4s ease;
+		opacity: 0;
+		//overflow: hidden;
+		pointer-events: all;
+
+		//@include mobile {
+		//	max-width: 100% !important;
+		//	transform: translateY(100%);
+		//	margin: auto auto 0;
+		//	opacity: 1;
+		//	padding: 18px 16px 16px;
+		//	border-radius: 16px 16px 0 0;
+		//	min-height: 60%;
+		//}
+
+		.modal--shown & {
+			opacity: 1;
+		}
+	}
+
+	&__title {
+		margin: 0 0 16px 0;
+
+		@include mobile() {
+			margin: 0 0 32px 0;
+		}
+	}
+
+	&__text {
+		color: $color-gray-800;
+		margin: 0 0 32px 0;
+
+		@include mobile() {
+			display: none;
+		}
+
+		a {
+			text-decoration-line: underline;
+			text-underline-offset: 3px;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		gap: 12px;
+
+		@include mobile() {
+			display: none;
+		}
+	}
+
+	&__close-btn {
+		position: absolute;
+		z-index: 6;
+		top: -70px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		background-image: url("../images/sprites/svg/close-white.svg");
+		background-color: rgba(255, 255, 255, 0.08);
+		background-size: 24px 24px;
+		background-position: center;
+		background-repeat: no-repeat;
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		backdrop-filter: blur(16px);
+		transition: background-color $duration-normal, background-image $duration-normal;
+
+		&:hover {
+			background-color: #ececec;
+			background-image: url("../images/sprites/svg/close.svg");
+		}
+
+	}
+
+	&__body {
+		display: flex;
+		padding: 80px 0 120px;
+		gap: 10%;
+
+		@include tablet() {
+			flex-direction: column;
+			gap: 40px;
+		}
+
+		@include mobile() {
+			gap: 0;
+			padding: 32px 0 120px;
+		}
+
+		&-left {
+			flex: 0 1 505px;
+
+			@include tablet() {
+				flex: 0 1 auto;
+			}
+		}
+
+		&-right {
+			flex: 0 1 440px;
+
+			@include tablet() {
+				flex: 0 1 auto;
+			}
+		}
+	}
+}

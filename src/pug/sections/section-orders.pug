@@ -38,10 +38,11 @@ section.section-orders#orders
 						.swiper-slide
 							.section-orders__slide
 								.section-orders__slide-left
-									h3.h3.section-orders__slide-title= slide.title
-									.section-orders__slide-tags
-										for tag in slide.tags
-											p.section-orders__slide-tag= tag
+									.section-orders__slide-header
+										h3.h3.section-orders__slide-title= slide.title
+										.section-orders__slide-tags
+											for tag in slide.tags
+												p.section-orders__slide-tag= tag
 								.section-orders__slide-right
 									.section-orders__slide-customer
 										p.section-orders__slide-customer-name.text-m= slide.name
@@ -53,7 +54,7 @@ section.section-orders#orders
 										if (slide.additions)
 											img(src= slide.additions)
 										else
-											img(src='../images/order-review-plug.jpg')
+											img(src='./images/order-review-plug.jpg')
 		.section-orders__navigation.custom-arrows
 			.swiper-button-prev.custom-arrow.custom-arrow-prev.section-orders__navigation-arrow-prev
 			.swiper-button-next.custom-arrow.custom-arrow-next.section-orders__navigation-arrow-next

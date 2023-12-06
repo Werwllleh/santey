@@ -2,17 +2,38 @@
 	position: relative;
 
 	&__info {
+		display: flex;
+		flex-direction: column;
 		padding: 620px 0 120px;
+
+		@include mobile() {
+			padding: 150px 0 40px;
+			gap: 300px;
+		}
 
 		&-title {
 			max-width: 1000px;
 			margin: 0 0 36px 0;
+
+			@include mobile() {
+				text-align: center;
+				color: $color-gray-900;
+			}
 		}
 
 		&-buttons {
 			display: flex;
 			align-items: center;
 			gap: 16px;
+
+			@include mobile() {
+				flex-direction: column;
+
+				.btn {
+					max-width: none;
+					width: 100%;
+				}
+			}
 		}
 
 	}
@@ -38,5 +59,15 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+
+		@include tablet() {
+			border-radius: 0 0 12px 12px;
+			overflow: hidden;
+		}
+
+		@include mobile() {
+			background-image: url(../images/bg-mobile.jpg);
+		}
+
 	}
 }

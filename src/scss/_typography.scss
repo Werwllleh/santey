@@ -7,6 +7,12 @@
 	line-height: normal;
 	letter-spacing: 0.52px;
 	text-transform: uppercase;
+
+	@include tablet() {
+		font-size: 28px;
+		line-height: 1.28;
+		letter-spacing: 0.28px;
+	}
 }
 
 .h2 {

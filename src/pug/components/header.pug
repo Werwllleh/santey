@@ -27,10 +27,37 @@ header.header
 		.header__logo
 			+svg("logo")
 		nav.header__nav
-			ul.header__nav-list
-				for item in menu
-					li.header__nav-item
-						a.header__nav-link(href= item.link )= item.name
+			.header__nav-body
+				ul.header__nav-list
+					for item in menu
+						li.header__nav-item
+							a.header__nav-link(href= item.link )= item.name
+				.header__nav-mobile
+					.header__nav-mobile-buttons
+						a.header__nav-mobile-button-request.btn.btn-blue.btn-l.button-text-l(data-modal="request") Оставить заявку
+						a.header__nav-mobile-button-question.btn.btn-l.button-text-l(data-modal="question") Задать вопрос
+					.header__nav-mobile-footer
+						.footer-content__column
+							.footer-content__info
+								a.footer-content__info-contact(href="tel:+74993488749") +7 (499) 348-87-49
+								p.footer-content__info-note.text-m-compact Звонок бесплатный
+							.footer-content__info
+								a.footer-content__info-contact(href="mailto: info@santey.org") info@santey.org
+								p.footer-content__info-note.text-m-compact По всем вопросам
+							.footer-content__info
+								.footer-content__info-socials
+									a.footer-content__info-socials-btn.social-btn.whats-app-btn(target="_blank", href="#")
+										+svg('whats-app-icon')
+									a.footer-content__info-socials-btn.social-btn.vk-app-btn(target="_blank", href="#")
+										+svg('vk-icon')
 		.header__right
-			a.header__right-phone(href="tel:+74993488749") +7 (499) 348-87-49
-			a.header__right-button.btn.btn-blue.btn-m.button-text-m(data-button="request") Оставить заявку
+			a.header__right-phone(href="tel:+74993488749")(data-modal="phone")
+				span +7 (499) 348-87-49
+				.header__right-phone-icon
+					+svg("phone")
+			a.header__right-button.header__right-button-request.btn.btn-blue.btn-m.button-text-m(data-modal="request") Оставить заявку
+			a.header__right-button-burger
+				.header__right-button-burger-icon
+					+svg("burger")
+				.header__right-button-burger-close.hide
+					+svg("close")

@@ -13,7 +13,8 @@
 		{
 			about: 'Поставка запчастей для строительной техники',
 			text: 'более 15 лет специализируемся на поставке широкого ассортимента запасных частей для грузовой, горной и дорожно-строительной техники.',
-			img: './images/services/services3.png'
+			img: './images/services/services3.png',
+			img_mobile: './images/services/services3-mobile.png',
 		},
 		{
 			about: 'Организация поставок малогабаритных товаров',
@@ -28,13 +29,14 @@
 		{
 			about: 'Качество услуг подтверждается сертификатом ISO 9001',
 			text: '',
-			img: './images/services/services6.png'
+			img: './images/services/services6.png',
+			img_mobile: './images/services/services6-mobile.png',
 		},
 	]
 // section-services
 section.section-services#services
 	.container
-		h2.h2.section-services__title Оказываем весь комплекс транспортных и логистических услуг под ключ
+		h2.h2.section-services__title Оказываем весь комплекс транспортных и логистических услуг под ключ
 		.section-services-assortment
 			for item in services
 				.section-services-assortment__card
@@ -45,6 +47,11 @@ section.section-services#services
 						a.section-services-assortment__card-arrow(href="#")
 							span
 								+svg("arrow-right")
-					.section-services-assortment__card-image
-						img(src=item.img)
-
+					if (item.img_mobile)
+						.section-services-assortment__card-image.section-services-assortment__card-image-desctop
+							img(src=item.img)
+						.section-services-assortment__card-image.section-services-assortment__card-image-mobile
+							img(src=item.img_mobile)
+					else
+						.section-services-assortment__card-image
+							img(src=item.img)

@@ -345,12 +345,8 @@ input, button, textarea {
 }
 
 .custom-arrows {
-	position: absolute;
 	display: flex;
 	max-width: 120px;
-	top: 0;
-	right: 0;
-	left: auto;
 	width: 100%;
 	height: 56px;
 
@@ -421,4 +417,17 @@ input, button, textarea {
 
 .text-more-dots {
 	color: $color-gray-500;
+}
+
+.modal-backdrop {
+	position: fixed;
+	z-index: 777;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.modal-backdrop--show {
+	background-color: rgba(0, 0, 0, 0.4);
 }
