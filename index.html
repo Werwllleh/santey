@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1701805518875">
+		<link rel="stylesheet" href="./css/main.css?v=1701863030871">
 	</head>
 	<body>
 		<header class="header">
@@ -23,7 +23,22 @@
 						<li class="header__nav-item"><a class="header__nav-link" href="#contacts">Контакты</a></li>
 					</ul>
 				</nav>
-				<div class="header__right"><a class="header__right-phone" href="tel:+74993488749">+7 (499) 348-87-49</a><a class="header__right-button btn btn-blue btn-m button-text-m" data-button="request">Оставить заявку</a></div>
+				<div class="header__right"><a class="header__right-phone" href="tel:+74993488749"><span>+7 (499) 348-87-49</span>
+						<div class="header__right-phone-icon">
+							<svg>
+								<use xlink:href="./images/sprites.svg#phone"></use>
+							</svg>
+						</div></a><a class="header__right-button header__right-button-request btn btn-blue btn-m button-text-m" data-button="request">Оставить заявку</a><a class="header__right-button-burger">
+						<div class="header__right-button-burger-icon">
+							<svg>
+								<use xlink:href="./images/sprites.svg#burger"></use>
+							</svg>
+						</div>
+						<div class="header__right-button-burger-close hide">
+							<svg>
+								<use xlink:href="./images/sprites.svg#close"></use>
+							</svg>
+						</div></a></div>
 			</div>
 		</header>
 		<main class="main">
@@ -46,7 +61,7 @@
 							<h2 class="h2 section-about__title">О нас</h2>
 							<div class="section-about__text">
 								<p class="section-about__subtitle">Мы занимаемся поиском альтернатив для товаров Европейских производителей в странах Персидского залива, Индии и Китая</p>
-								<div class="section-about__description">
+								<div class="section-about__description text-m">
 									<p>Налаженные цепочки поставок дают нам преимущества в оперативном подборе товара, его сертификации и доставке конечному клиенту.</p>
 									<p>Наша цель — это поддержка Российских предприятий необходимыми товарами для беспрерывной работы.</p>
 								</div>
@@ -96,7 +111,7 @@
 			<!-- section-services-->
 			<section class="section-services" id="services">
 				<div class="container">
-					<h2 class="h2 section-services__title">Оказываем весь комплекс транспортных и логистических услуг под ключ</h2>
+					<h2 class="h2 section-services__title">Оказываем весь комплекс транспортных и логистических услуг под ключ</h2>
 					<div class="section-services-assortment">
 						<div class="section-services-assortment__card">
 							<div class="section-services-assortment__card-info">
@@ -124,7 +139,8 @@
 											<use xlink:href="./images/sprites.svg#arrow-right"></use>
 										</svg></span></a>
 							</div>
-							<div class="section-services-assortment__card-image"><img src="./images/services/services3.png"></div>
+							<div class="section-services-assortment__card-image section-services-assortment__card-image-desctop"><img src="./images/services/services3.png"></div>
+							<div class="section-services-assortment__card-image section-services-assortment__card-image-mobile"><img src="./images/services/services3-mobile.png"></div>
 						</div>
 						<div class="section-services-assortment__card">
 							<div class="section-services-assortment__card-info">
@@ -152,7 +168,8 @@
 											<use xlink:href="./images/sprites.svg#arrow-right"></use>
 										</svg></span></a>
 							</div>
-							<div class="section-services-assortment__card-image"><img src="./images/services/services6.png"></div>
+							<div class="section-services-assortment__card-image section-services-assortment__card-image-desctop"><img src="./images/services/services6.png"></div>
+							<div class="section-services-assortment__card-image section-services-assortment__card-image-mobile"><img src="./images/services/services6-mobile.png"></div>
 						</div>
 					</div>
 				</div>
@@ -160,7 +177,7 @@
 			<!-- section-problems-->
 			<section class="section-problems" id="about">
 				<div class="container">
-					<h2 class="h2 section-problems__title">Решение проблем берем на себя</h2>
+					<h2 class="h2 section-problems__title">Решение проблем берем на себя</h2>
 					<div class="section-problems__cards">
 						<div class="cards">
 							<div class="cards-body">
@@ -233,7 +250,7 @@
 						<div class="section-procedure__step">
 							<div class="section-procedure__step-number button-text-m">2</div>
 							<div class="section-procedure__step-info">
-								<h3 class="h3 section-procedure__step-title">Организуем поиск и делаем расчет доставки необходимого товара под ключ</h3>
+								<h3 class="h3 section-procedure__step-title">Организуем поиск и делаем расчет доставки необходимого товара под ключ</h3>
 							</div>
 						</div>
 						<div class="section-procedure__step">
@@ -246,7 +263,7 @@
 							<div class="section-procedure__step-number button-text-m">4</div>
 							<div class="section-procedure__step-info">
 								<h3 class="h3 section-procedure__step-title">Заключаем договор на перевозку и подбираем транспорт под ваш груз</h3>
-								<p class="section-procedure__step-text text-m">Везем продукцию напрямую с заводов изготовителей с минимальной наценкой. Работаем с «ПЭК», «Деловые Линии» и «Росжелдор». Вы можете выбрать любую траспортную компанию для доставки груза с нашего склада или вывезти его своими силами.</p>
+								<p class="section-procedure__step-text text-m">Везем продукцию напрямую с заводов изготовителей с минимальной наценкой. Работаем с «ПЭК», «Деловые Линии» и «Росжелдор». Вы можете выбрать любую траспортную компанию для доставки груза с нашего склада или вывезти его своими силами.</p>
 							</div>
 						</div>
 						<div class="section-procedure__step">
@@ -321,10 +338,12 @@
 								<div class="swiper-slide">
 									<div class="section-orders__slide">
 										<div class="section-orders__slide-left">
-											<h3 class="h3 section-orders__slide-title">Поставка грузовых запчастей оптом с завода производителя</h3>
-											<div class="section-orders__slide-tags">
-												<p class="section-orders__slide-tag">Доставка из Китая</p>
-												<p class="section-orders__slide-tag">Срок 10 дней</p>
+											<div class="section-orders__slide-header">
+												<h3 class="h3 section-orders__slide-title">Поставка грузовых запчастей оптом с завода производителя</h3>
+												<div class="section-orders__slide-tags">
+													<p class="section-orders__slide-tag">Доставка из Китая</p>
+													<p class="section-orders__slide-tag">Срок 10 дней</p>
+												</div>
 											</div>
 										</div>
 										<div class="section-orders__slide-right">
@@ -343,10 +362,12 @@
 								<div class="swiper-slide">
 									<div class="section-orders__slide">
 										<div class="section-orders__slide-left">
-											<h3 class="h3 section-orders__slide-title">Поставки химических товаров</h3>
-											<div class="section-orders__slide-tags">
-												<p class="section-orders__slide-tag">Доставка из Германии</p>
-												<p class="section-orders__slide-tag">Срок 6 дней</p>
+											<div class="section-orders__slide-header">
+												<h3 class="h3 section-orders__slide-title">Поставки химических товаров</h3>
+												<div class="section-orders__slide-tags">
+													<p class="section-orders__slide-tag">Доставка из Германии</p>
+													<p class="section-orders__slide-tag">Срок 6 дней</p>
+												</div>
 											</div>
 										</div>
 										<div class="section-orders__slide-right">
@@ -366,10 +387,12 @@
 								<div class="swiper-slide">
 									<div class="section-orders__slide">
 										<div class="section-orders__slide-left">
-											<h3 class="h3 section-orders__slide-title">Поставка запчастей для строительной техники</h3>
-											<div class="section-orders__slide-tags">
-												<p class="section-orders__slide-tag">Доставка из Китая</p>
-												<p class="section-orders__slide-tag">Срок 12 дней</p>
+											<div class="section-orders__slide-header">
+												<h3 class="h3 section-orders__slide-title">Поставка запчастей для строительной техники</h3>
+												<div class="section-orders__slide-tags">
+													<p class="section-orders__slide-tag">Доставка из Китая</p>
+													<p class="section-orders__slide-tag">Срок 12 дней</p>
+												</div>
 											</div>
 										</div>
 										<div class="section-orders__slide-right">
@@ -470,7 +493,7 @@
 				document.getElementsByTagName('head')[0].appendChild(script);
 			}
 		</script>
-		<script src="./js/vendor.js?v=1701805518875"></script>
-		<script src="./js/main.js?v=1701805518875"></script>
+		<script src="./js/vendor.js?v=1701863030872"></script>
+		<script src="./js/main.js?v=1701863030872"></script>
 	</body>
 </html>
