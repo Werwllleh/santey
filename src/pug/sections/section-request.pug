@@ -7,27 +7,27 @@ section.section-request#request
 				.form__fields
 					.section-request__form-field.form__field
 						.form__field-title.caption Тип груза
-						input(type="text").form__field-input
+						input(type="text", required, minlength="3").form__field-input
 					.form__field-row
 						.section-request__form-field.form__field
 							.form__field-title.caption Объем, м3
-							input(type="text").form__field-input
+							input(type="number", required, min="0").form__field-input
 						.section-request__form-field.form__field
 							.form__field-title.caption Вес, кг
-							input(type="text").form__field-input
+							input(type="number", required, min="0").form__field-input
 					.form__field-row
 						.section-request__form-field.form__field
 							.form__field-title.caption Откуда
-							input(type="text").form__field-input
+							input(type="text", required, minlength="3").form__field-input
 						.section-request__form-field.form__field
 							.form__field-title.caption Куда
-							input(type="text").form__field-input
+							input(type="text", required, minlength="3").form__field-input
 					.section-request__form-field.form__field
 						.form__field-title.caption Ваше имя
-						input(type="text").form__field-input
+						input(type="text", required, name="name", minlength="3").form__field-input
 					.section-request__form-field.form__field
 						.form__field-title.caption Номер телефона
-						input(type="tel").form__field-input
+						input(type="tel", required, name="phone").form__field-input
 					button.btn.btn-blue.btn-m.form__field-submit(type="submit" data-button="Оставить заявку") Оставить заявку
 				.form__footer.caption
 					| Нажимая на кнопку «Оставить заявку», Вы даете согласие на обработку 

@@ -1,4 +1,6 @@
 // Open modal
+import {getScrollbarWidth} from "../main";
+
 const modalLinks = document.querySelectorAll('[data-modal]')
 if (modalLinks.length) {
 	modalLinks.forEach((link) => {
@@ -34,6 +36,8 @@ export const openModal = (modalId) => {
 		showBackdrop()
 	}
 
+	console.log(getScrollbarWidth())
+	document.body.style.paddingRight = getScrollbarWidth() + 'px';
 	modal.classList.add('modal--show')
 	setTimeout(() => {
 		modal.classList.add('modal--shown')
@@ -47,6 +51,7 @@ function closeModal(isModalFromModal = false) {
 	if (!modal) return
 
 	modal.classList.remove('modal--shown')
+    document.body.style.paddingRight = 0;
 	if (!isModalFromModal) hideBackdrop()
 	setTimeout(() => {
 		modal.classList.remove('modal--show')
@@ -96,27 +101,5 @@ const hideBackdrop = () => {
 		}, 350)
 	}
 }
-
-// Modal Filter
-// const filterFormList = document.querySelectorAll('.modal-filter__form')
-// if (filterFormList.length) {
-// 	filterFormList.forEach((form) => {
-// 		const selectList = form.querySelectorAll('select')
-// 		form.addEventListener('reset', function () {
-// 			form.classList.add('reset')
-// 			selectList.forEach((select) => {
-// 				const defaultValue = select.querySelector('option').value
-// 				select.slim.setSelected(defaultValue)
-// 			})
-// 			form.classList.remove('modal-filter__form--touched')
-// 			setTimeout(() => {
-// 				form.classList.remove('reset')
-// 			}, 100)
-// 		})
-//
-// 		form.addEventListener('change', () => form.classList.add('modal-filter__form--touched'))
-// 	})
-// }
-
 
 

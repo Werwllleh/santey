@@ -19,10 +19,10 @@
 						.form__fields
 							.section-ask-question__form-field.form__field
 								.form__field-title.caption Ваше имя
-								input(type="text").form__field-input
+								input(type="text", required, name="name", minlength="3").form__field-input
 							.section-ask-question__form-field.form__field
 								.form__field-title.caption Номер телефона
-								input(type="tel").form__field-input
+								input(type="tel", required, name="phone").form__field-input
 							button.btn.btn-blue.btn-m.form__field-submit(type="submit") Оставить заявку
 						.form__footer.caption
 							| Нажимая на кнопку «Задать вопрос», Вы даете согласие на обработку 

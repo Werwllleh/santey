@@ -55,6 +55,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
 		});
 	})
 
+	if (window.outerWidth <= 1200) {
+		mobileMenu.classList.remove('active');
+		document.body.style.overflow = 'auto';
+	}
 
 
 	mobileMenuBurger.addEventListener('click', () => {

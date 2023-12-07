@@ -1,4 +1,5 @@
 import IMask from "imask";
+import {openModal} from "./modals";
 
 
 const formList = document.querySelectorAll('form')
@@ -29,13 +30,20 @@ if (formList.length) {
 	})
 }
 
-const submittedForms = document.querySelectorAll('.form__field-submit')
-if(submittedForms.length) {
-	submittedForms.forEach((form)=>{
+const forms = document.querySelectorAll('.form');
+
+if(forms.length) {
+	forms.forEach((form)=>{
 		form.addEventListener('submit', (e) => {
 			e.preventDefault()
+
 			// Отправляем форму
 			// ...
+			if (form.elements['phone'] && form.elements['phone'].value.length !== 18) {
+				return
+			} else {
+				openModal('#modal-success')
+			}
 			// openModal('#modal-success')
 		})
 	})

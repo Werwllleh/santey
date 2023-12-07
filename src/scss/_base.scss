@@ -289,6 +289,11 @@ input, button, textarea {
 			}
 		}
 
+		&-input-textarea {
+			min-height: 128px;
+			resize: vertical;
+		}
+
 		&-input {
 			width: 100%;
 			outline: none;
@@ -303,9 +308,12 @@ input, button, textarea {
 			//	color: $color-gray-400;
 			//}
 
-			&[type='textarea'] {
-				min-height: 128px;
+			&::-webkit-outer-spin-button,
+			&::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				-moz-appearance: textfield;
 			}
+
 
 			&:hover {
 				border: 1px solid $color-gray-400;
@@ -430,4 +438,8 @@ input, button, textarea {
 
 .modal-backdrop--show {
 	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.lg-backdrop {
+	background-color: #000000c4 !important;
 }

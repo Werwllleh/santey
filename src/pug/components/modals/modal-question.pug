@@ -19,13 +19,13 @@
 						.form__fields
 							.section-ask-question__form-field.form__field
 								.form__field-title.caption Ваше имя
-								input(type="text").form__field-input
+								input(type="text", required, name="name", minlength="3").form__field-input
 							.section-ask-question__form-field.form__field
 								.form__field-title.caption Номер телефона
-								input(type="tel").form__field-input
+								input(type="tel", required, name="phone", minlength="3").form__field-input
 							.section-ask-question__form-field.form__field
 								.form__field-title.caption Ваш вопрос
-								input(type="textarea").form__field-input
+								textarea(required, name="text", minlength="15").form__field-input.form__field-input-textarea
 							button.btn.btn-blue.btn-m.form__field-submit(type="submit") Задать вопрос
 						.form__footer.caption
 							| Нажимая на кнопку «Задать вопрос», Вы даете согласие на обработку 

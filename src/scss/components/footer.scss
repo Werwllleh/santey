@@ -39,6 +39,10 @@
 				letter-spacing: -0.36px;
 				text-transform: uppercase;
 
+				&:hover {
+					color: #2E85FF;
+				}
+
 				@include mobile() {
 					font-size: 26px;
 					font-weight: 500;
@@ -117,12 +121,25 @@
 			&-copyright {
 				//white-space: nowrap;
 			}
+
+			&-link-pdn {
+
+				&:hover {
+					color: #6C757D;
+				}
+			}
 		}
 
 		&__right {
 			white-space: nowrap;
 			flex: 0 1 50%;
 
+			a {
+
+				&:hover{
+					color: #6C757D;
+				}
+			}
 		}
 	}
 }
