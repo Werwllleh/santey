@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1701876581966">
+		<link rel="stylesheet" href="./css/main.css?v=1701955063219">
 	</head>
 	<body>
 		<header class="header">
@@ -139,7 +139,7 @@
 					<div class="section-services-assortment">
 						<div class="section-services-assortment__card">
 							<div class="section-services-assortment__card-info">
-								<h3 class="h3 section-services-assortment__card-title">Поставка химической продукции, ушедшей с Российского рынка</h3><a class="section-services-assortment__card-arrow" href="#"><span>
+								<h3 class="h3 section-services-assortment__card-title">Поставка химической продукции, ушедшей с Российского рынка</h3><a class="section-services-assortment__card-arrow" href="#" data-modal="request"><span>
 										<svg>
 											<use xlink:href="./images/sprites.svg#arrow-right"></use>
 										</svg></span></a>
@@ -148,7 +148,7 @@
 						</div>
 						<div class="section-services-assortment__card">
 							<div class="section-services-assortment__card-info">
-								<h3 class="h3 section-services-assortment__card-title">Поиск альтернатив для товаров, ушедших с Российского рынка</h3><a class="section-services-assortment__card-arrow" href="#"><span>
+								<h3 class="h3 section-services-assortment__card-title">Поиск альтернатив для товаров, ушедших с Российского рынка</h3><a class="section-services-assortment__card-arrow" href="#" data-modal="request"><span>
 										<svg>
 											<use xlink:href="./images/sprites.svg#arrow-right"></use>
 										</svg></span></a>
@@ -158,7 +158,7 @@
 						<div class="section-services-assortment__card">
 							<div class="section-services-assortment__card-info">
 								<h3 class="h3 section-services-assortment__card-title">Поставка запчастей для строительной техники</h3>
-								<p class="section-services-assortment__card-text text-m-compact">более 15 лет специализируемся на поставке широкого ассортимента запасных частей для грузовой, горной и дорожно-строительной техники.</p><a class="section-services-assortment__card-arrow" href="#"><span>
+								<p class="section-services-assortment__card-text text-m-compact">более 15 лет специализируемся на поставке широкого ассортимента запасных частей для грузовой, горной и дорожно-строительной техники.</p><a class="section-services-assortment__card-arrow" href="#" data-modal="request"><span>
 										<svg>
 											<use xlink:href="./images/sprites.svg#arrow-right"></use>
 										</svg></span></a>
@@ -168,7 +168,7 @@
 						</div>
 						<div class="section-services-assortment__card">
 							<div class="section-services-assortment__card-info">
-								<h3 class="h3 section-services-assortment__card-title">Организация поставок малогабаритных товаров</h3><a class="section-services-assortment__card-arrow" href="#"><span>
+								<h3 class="h3 section-services-assortment__card-title">Организация поставок малогабаритных товаров</h3><a class="section-services-assortment__card-arrow" href="#" data-modal="request"><span>
 										<svg>
 											<use xlink:href="./images/sprites.svg#arrow-right"></use>
 										</svg></span></a>
@@ -178,7 +178,7 @@
 						<div class="section-services-assortment__card">
 							<div class="section-services-assortment__card-info">
 								<h3 class="h3 section-services-assortment__card-title">Перевозки
- из стран Европы</h3><a class="section-services-assortment__card-arrow" href="#"><span>
+ из стран Европы</h3><a class="section-services-assortment__card-arrow" href="#" data-modal="request"><span>
 										<svg>
 											<use xlink:href="./images/sprites.svg#arrow-right"></use>
 										</svg></span></a>
@@ -187,13 +187,13 @@
 						</div>
 						<div class="section-services-assortment__card">
 							<div class="section-services-assortment__card-info">
-								<h3 class="h3 section-services-assortment__card-title">Качество услуг подтверждается сертификатом ISO 9001</h3><a class="section-services-assortment__card-arrow" href="#"><span>
+								<h3 class="h3 section-services-assortment__card-title">Качество услуг подтверждается сертификатом ISO 9001</h3><a class="section-services-assortment__card-arrow" id="document"><span href="./images/services/document-iso.jpg">
 										<svg>
 											<use xlink:href="./images/sprites.svg#arrow-right"></use>
 										</svg></span></a>
+								<div class="section-services-assortment__card-image section-services-assortment__card-image-desctop"><img src="./images/services/services6.png"></div>
+								<div class="section-services-assortment__card-image section-services-assortment__card-image-mobile"><img src="./images/services/services6-mobile.png"></div>
 							</div>
-							<div class="section-services-assortment__card-image section-services-assortment__card-image-desctop"><img src="./images/services/services6.png"></div>
-							<div class="section-services-assortment__card-image section-services-assortment__card-image-mobile"><img src="./images/services/services6-mobile.png"></div>
 						</div>
 					</div>
 				</div>
@@ -314,35 +314,35 @@
 							<div class="form__fields">
 								<div class="section-request__form-field form__field">
 									<div class="form__field-title caption">Тип груза</div>
-									<input class="form__field-input" type="text">
+									<input class="form__field-input" type="text" required minlength="3">
 								</div>
 								<div class="form__field-row">
 									<div class="section-request__form-field form__field">
 										<div class="form__field-title caption">Объем, м3</div>
-										<input class="form__field-input" type="text">
+										<input class="form__field-input" type="number" required min="0">
 									</div>
 									<div class="section-request__form-field form__field">
 										<div class="form__field-title caption">Вес, кг</div>
-										<input class="form__field-input" type="text">
+										<input class="form__field-input" type="number" required min="0">
 									</div>
 								</div>
 								<div class="form__field-row">
 									<div class="section-request__form-field form__field">
 										<div class="form__field-title caption">Откуда</div>
-										<input class="form__field-input" type="text">
+										<input class="form__field-input" type="text" required minlength="3">
 									</div>
 									<div class="section-request__form-field form__field">
 										<div class="form__field-title caption">Куда</div>
-										<input class="form__field-input" type="text">
+										<input class="form__field-input" type="text" required minlength="3">
 									</div>
 								</div>
 								<div class="section-request__form-field form__field">
 									<div class="form__field-title caption">Ваше имя</div>
-									<input class="form__field-input" type="text">
+									<input class="form__field-input" type="text" required name="name" minlength="3">
 								</div>
 								<div class="section-request__form-field form__field">
 									<div class="form__field-title caption">Номер телефона</div>
-									<input class="form__field-input" type="tel">
+									<input class="form__field-input" type="tel" required name="phone">
 								</div>
 								<button class="btn btn-blue btn-m form__field-submit" type="submit" data-button="Оставить заявку">Оставить заявку</button>
 							</div>
@@ -453,15 +453,15 @@
 							<div class="form__fields">
 								<div class="section-ask-question__form-field form__field">
 									<div class="form__field-title caption">Ваше имя</div>
-									<input class="form__field-input" type="text">
+									<input class="form__field-input" type="text" name="name" required minlength="3">
 								</div>
 								<div class="section-ask-question__form-field form__field">
 									<div class="form__field-title caption">Номер телефона</div>
-									<input class="form__field-input" type="tel">
+									<input class="form__field-input" type="tel" name="phone" required>
 								</div>
 								<div class="section-ask-question__form-field form__field">
 									<div class="form__field-title caption">Ваш вопрос</div>
-									<input class="form__field-input" type="textarea">
+									<textarea class="form__field-input form__field-input-textarea" required name="text" minlength="15"></textarea>
 								</div>
 								<button class="btn btn-blue btn-m form__field-submit" type="submit" data-button="Задать вопрос">Задать вопрос</button>
 							</div>
@@ -504,9 +504,9 @@
 				</div>
 				<div class="footer-bottom">
 					<div class="footer-bottom__left">
-						<div class="footer-bottom__left-copyright"><span class="footer-bottom__left-copyright-year"></span>, Santey</div><a href="#">Обработка персональных данных</a>
+						<div class="footer-bottom__left-copyright"><span class="footer-bottom__left-copyright-year"></span>, Santey</div><a class="footer-bottom__left-link-pdn" href="#">Обработка персональных данных</a>
 					</div>
-					<div class="footer-bottom__right">Разработано в <a target="_blank" href="https://mworks.ru/">MediaWorks</a></div>
+					<div class="footer-bottom__right"><a target="_blank" href="https://mworks.ru/">Разработано в MediaWorks</a></div>
 				</div>
 			</div>
 		</footer>
@@ -535,15 +535,15 @@
 								<div class="form__fields">
 									<div class="section-ask-question__form-field form__field">
 										<div class="form__field-title caption">Ваше имя</div>
-										<input class="form__field-input" type="text">
+										<input class="form__field-input" type="text" required name="name" minlength="3">
 									</div>
 									<div class="section-ask-question__form-field form__field">
 										<div class="form__field-title caption">Номер телефона</div>
-										<input class="form__field-input" type="tel">
+										<input class="form__field-input" type="tel" required name="phone" minlength="3">
 									</div>
 									<div class="section-ask-question__form-field form__field">
 										<div class="form__field-title caption">Ваш вопрос</div>
-										<input class="form__field-input" type="textarea">
+										<textarea class="form__field-input form__field-input-textarea" required name="text" minlength="15"></textarea>
 									</div>
 									<button class="btn btn-blue btn-m form__field-submit" type="submit">Задать вопрос</button>
 								</div>
@@ -579,11 +579,11 @@
 								<div class="form__fields">
 									<div class="section-ask-question__form-field form__field">
 										<div class="form__field-title caption">Ваше имя</div>
-										<input class="form__field-input" type="text">
+										<input class="form__field-input" type="text" required name="name" minlength="3">
 									</div>
 									<div class="section-ask-question__form-field form__field">
 										<div class="form__field-title caption">Номер телефона</div>
-										<input class="form__field-input" type="tel">
+										<input class="form__field-input" type="tel" required name="phone">
 									</div>
 									<button class="btn btn-blue btn-m form__field-submit" type="submit">Оставить заявку</button>
 								</div>
@@ -621,6 +621,19 @@
 				</div>
 			</div>
 		</div>
+		<!-- Modal Success-->
+		<div class="modal" id="modal-success">
+			<div class="modal__window modal-success">
+				<button class="modal__close-btn js-modal-close"></button>
+				<div class="container">
+					<div class="modal-success__body"><img class="modal-success__img" src="./images/sprites/svg/success.svg" alt="success">
+						<h2 class="modal-success__title h2-t">Заявка отправлена</h2>
+						<p class="modal-success__subtitle text-m-compact">Спасибо за обращение. <br> Менеджер скоро с вами свяжется</p>
+						<button class="btn btn-blue btn-m modal-success__close js-modal-close button-text-m">Закрыть форму</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script>
 			if (!('IntersectionObserver' in window)) {
 				var script = document.createElement("script");
@@ -628,7 +641,7 @@
 				document.getElementsByTagName('head')[0].appendChild(script);
 			}
 		</script>
-		<script src="./js/vendor.js?v=1701876581967"></script>
-		<script src="./js/main.js?v=1701876581967"></script>
+		<script src="./js/vendor.js?v=1701955063219"></script>
+		<script src="./js/main.js?v=1701955063219"></script>
 	</body>
 </html>
