@@ -34,14 +34,20 @@ const forms = document.querySelectorAll('.form');
 
 if(forms.length) {
 	forms.forEach((form)=>{
+		const fields = form.querySelectorAll('.form__field-input');
 		form.addEventListener('submit', (e) => {
 			e.preventDefault()
 
 			// Отправляем форму
 			// ...
 			if (form.elements['phone'] && form.elements['phone'].value.length !== 18) {
+                form.elements['phone'].classList.add('error');
 				return
 			} else {
+                form.elements['phone'].classList.remove('error');
+                fields.forEach((field) => {
+                    field.value = '';
+				})
 				openModal('#modal-success')
 			}
 			// openModal('#modal-success')

@@ -299,9 +299,9 @@ input, button, textarea {
 			outline: none;
 			padding: 17px 16px 15px 16px;
 			border-radius: 8px;
+			color: $color-gray-400;
 			border: 1px solid $color-gray-200;
 			background-color: $color-gray-100;
-			color: $color-gray-400;
 			transition: border $duration-normal, background-color $duration-normal, color $duration-normal;
 
 			//&::placeholder {
@@ -313,7 +313,6 @@ input, button, textarea {
 				-webkit-appearance: none;
 				-moz-appearance: textfield;
 			}
-
 
 			&:hover {
 				border: 1px solid $color-gray-400;

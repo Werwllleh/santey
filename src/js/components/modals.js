@@ -36,7 +36,6 @@ export const openModal = (modalId) => {
 		showBackdrop()
 	}
 
-	console.log(getScrollbarWidth())
 	document.body.style.paddingRight = getScrollbarWidth() + 'px';
 	modal.classList.add('modal--show')
 	setTimeout(() => {
