@@ -211,14 +211,20 @@ if (formList.length) {
 var forms = document.querySelectorAll('.form');
 if (forms.length) {
   forms.forEach(function (form) {
+    var fields = form.querySelectorAll('.form__field-input');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
       // Отправляем форму
       // ...
       if (form.elements['phone'] && form.elements['phone'].value.length !== 18) {
+        form.elements['phone'].classList.add('error');
         return;
       } else {
+        form.elements['phone'].classList.remove('error');
+        fields.forEach(function (field) {
+          field.value = '';
+        });
         Object(_modals__WEBPACK_IMPORTED_MODULE_1__["openModal"])('#modal-success');
       }
       // openModal('#modal-success')
@@ -367,7 +373,6 @@ var openModal = function openModal(modalId) {
     document.body.style.overflow = 'hidden';
     showBackdrop();
   }
-  console.log(Object(_main__WEBPACK_IMPORTED_MODULE_0__["getScrollbarWidth"])());
   document.body.style.paddingRight = Object(_main__WEBPACK_IMPORTED_MODULE_0__["getScrollbarWidth"])() + 'px';
   modal.classList.add('modal--show');
   setTimeout(function () {

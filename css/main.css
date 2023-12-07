@@ -2786,9 +2786,9 @@ input, button, textarea {
   outline: none;
   padding: 17px 16px 15px 16px;
   border-radius: 8px;
+  color: #CED4DA;
   border: 1px solid #E9ECEF;
   background-color: #F8F9FB;
-  color: #CED4DA;
   -webkit-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
   .form__field-input::-webkit-outer-spin-button, .form__field-input::-webkit-inner-spin-button {
@@ -2978,9 +2978,9 @@ input, button, textarea {
         pointer-events: all; } }
   @media (max-width: 1200px) {
     .header__nav-body {
-      height: calc(100% - 50px);
+      height: calc(100% - 70px);
       overflow-y: scroll;
-      padding: 0 0 50px 0; }
+      padding: 0 0 70px 0; }
       .header__nav-body::-webkit-scrollbar {
         width: 0; } }
   .header__nav-list {
@@ -3031,6 +3031,15 @@ input, button, textarea {
     .header__nav-mobile-button-question {
       background-color: #E9F2FF;
       color: #1366DE; }
+    .header__nav-mobile-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 40px; }
   .header__right {
     display: -webkit-box;
     display: -ms-flexbox;
