@@ -8,6 +8,10 @@
 		margin: 0 12px;
 	}
 
+	@include mobile() {
+		margin: 0;
+	}
+
 	&__title {
 		margin: 0 0 40px 0;
 		text-align: center;

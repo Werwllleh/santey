@@ -12,6 +12,10 @@
 		padding: 120px 0 80px;
 	}
 
+	@include mobile() {
+		margin: 0;
+	}
+
 	&__title {
 		text-align: center;
 		margin: 0 0 52px 0;
