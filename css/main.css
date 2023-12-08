@@ -2780,6 +2780,9 @@ input, button, textarea {
 .form__field-input-textarea {
   min-height: 128px;
   resize: vertical; }
+  @media (max-width: 564px) {
+    .form__field-input-textarea {
+      min-height: 60px; } }
 
 .form__field-input {
   width: 100%;
