@@ -292,6 +292,10 @@ input, button, textarea {
 		&-input-textarea {
 			min-height: 128px;
 			resize: vertical;
+
+			@include mobile() {
+				min-height: 60px;
+			}
 		}
 
 		&-input {
