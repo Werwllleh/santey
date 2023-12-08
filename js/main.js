@@ -272,9 +272,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
   if (window.pageYOffset !== 0) {
     header.classList.add('fixed');
   }
+  var primarySection = document.querySelector('.main-section-primary');
   document.addEventListener('scroll', function () {
     var scrollTop = window.scrollY;
-    if (scrollTop >= 100 && window.outerWidth >= 1200) {
+    if (scrollTop >= primarySection.clientHeight && window.outerWidth >= 1201) {
       header.classList.add('fixed');
     } else {
       header.classList.remove('fixed');
