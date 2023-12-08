@@ -28,6 +28,7 @@
 
 			@include mobile() {
 				flex-direction: column;
+				gap: 12px;
 
 				.btn {
 					max-width: none;
@@ -47,6 +48,10 @@
 		border: 1px solid rgba(255, 255, 255, 0.08);
 		background: rgba(255, 255, 255, 0.08);
 		backdrop-filter: blur(16px);
+
+		&:hover {
+			background: rgba(141, 141, 141, 0.27);
+		}
 	}
 
 	&__bg {

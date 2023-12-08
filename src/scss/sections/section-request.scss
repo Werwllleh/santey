@@ -1,7 +1,11 @@
 .section-request {
-	margin: 12px 0;
+	margin: 12px 32px;
 	padding: 80px 0;
 	position: relative;
+
+	@include laptop() {
+		margin: 12px 16px;
+	}
 
 	&__body {
 

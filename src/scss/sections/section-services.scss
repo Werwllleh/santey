@@ -2,6 +2,11 @@
 	padding: 140px 0 0 0;
 	background-color: $color-white;
 	border-radius: 12px 12px 0 0;
+	margin: 0 32px;
+
+	@include laptop() {
+		margin: 0 12px;
+	}
 
 	@include tablet() {
 		padding: 120px 0 0 0;
@@ -34,8 +39,25 @@
 			position: relative;
 			border-radius: 8px;
 			background-color: $color-gray-100;
+			border: 1px solid transparent;
 			padding: 32px;
 			overflow: hidden;
+			cursor: pointer;
+
+			&:hover {
+				border: 1px solid $color-gray-200;
+
+				.section-services-assortment__card-arrow {
+					background-color: $color-blue-300;
+					border: 1px solid $color-blue-300;
+
+					span {
+						svg {
+							stroke: $color-white;
+						}
+					}
+				}
+			}
 
 			@include tablet() {
 				padding: 20px;
@@ -49,14 +71,22 @@
 				flex: 1 1 100%;
 
 				.section-services-assortment__card-image {
-					width: auto;
+					max-width: 800px;
+					width: 100%;
 					height: auto;
 				}
 			}
 
 			&:nth-child(3),
-			&:nth-child(5) {
+			&:nth-child(5),
+			&:nth-child(6) {
 				.section-services-assortment__card-image {
+
+
+					@include desktop() {
+						max-width: 300px;
+						width: 100%;
+					}
 
 					@include mobile() {
 						width: 300px;
@@ -94,17 +124,7 @@
 				border: 1px solid $color-gray-200;
 				background-color: $color-gray-100;
 				padding: 16px;
-				transition: background-color $duration-normal;
-
-				&:hover {
-					background-color: $color-blue-400;
-
-					span {
-						svg {
-							stroke: $color-white;
-						}
-					}
-				}
+				transition: background-color $duration-normal, border $duration-normal;
 
 				span {
 					svg {

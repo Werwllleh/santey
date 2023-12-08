@@ -2,9 +2,14 @@
 	padding: 160px 0 140px 0;
 	background-color: $color-white;
 	border-radius: 0 0 12px 12px;
+	margin: 0 32px;
+
+	@include laptop() {
+		margin: 0 12px;
+	}
 
 	&__title {
-		margin: 0 0 56px 0;
+		margin: 0 0 40px 0;
 		text-align: center;
 	}
 

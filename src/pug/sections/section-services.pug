@@ -39,12 +39,12 @@ section.section-services#services
 		h2.h2.section-services__title Оказываем весь комплекс транспортных и логистических услуг под ключ
 		.section-services-assortment
 			for item in services
-				.section-services-assortment__card
+				a.section-services-assortment__card(href="#")(data-modal="request")
 					.section-services-assortment__card-info
 						h3.h3.section-services-assortment__card-title= item.about
 						if (item.text)
 							p.section-services-assortment__card-text.text-m-compact= item.text
-						a.section-services-assortment__card-arrow(href="#")(data-modal="request")
+						.section-services-assortment__card-arrow
 							span
 								+svg("arrow-right")
 					if (item.img_mobile)
@@ -55,11 +55,11 @@ section.section-services#services
 					else
 						.section-services-assortment__card-image
 							img(src=item.img)
-			.section-services-assortment__card
-				.section-services-assortment__card-info
+			a#document.section-services-assortment__card
+				.section-services-assortment__card-info(href="./images/services/document-iso.jpg")
 					h3.h3.section-services-assortment__card-title Качество услуг подтверждается сертификатом ISO 9001
-					a#document.section-services-assortment__card-arrow
-						span(href="./images/services/document-iso.jpg")
+					.section-services-assortment__card-arrow
+						span
 							+svg("arrow-right")
 					.section-services-assortment__card-image.section-services-assortment__card-image-desctop
 						img(src='./images/services/services6.png')

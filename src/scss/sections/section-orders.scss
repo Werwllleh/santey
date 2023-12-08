@@ -1,8 +1,14 @@
 .section-orders {
 	padding: 150px 0 80px;
-	border-radius: 12px;
+	border-radius: 12px 12px 0 0;
 	background: $color-white;
 	position: relative;
+	overflow: hidden;
+	margin: 0 32px;
+
+	@include tablet() {
+		margin: 0 16px;
+	}
 
 	&__title {
 		display: flex;

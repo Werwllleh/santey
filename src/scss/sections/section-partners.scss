@@ -49,6 +49,12 @@
 		border-radius: 8px;
 		border: 1px solid $color-gray-200;
 		background: $color-gray-100;
+		transition: border $duration-normal;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid $color-gray-300;
+		}
 
 		@include tablet() {
 			padding: 16px 8px;

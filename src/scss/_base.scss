@@ -228,7 +228,7 @@ input, button, textarea {
 	border-radius: 48px;
 	border: 1px solid $color-gray-200;
 	background-color: $color-gray-100;
-	transition: background-color $duration-normal;
+	transition: background-color $duration-normal, border $duration-normal;
 
 	svg {
 		width: 32px;
@@ -249,6 +249,7 @@ input, button, textarea {
 .whats-app-btn {
 
 	&:hover {
+		border: 1px solid #25D366;
 		background-color: #25D366;
 	}
 
@@ -256,6 +257,7 @@ input, button, textarea {
 .vk-app-btn {
 
 	&:hover {
+		border: 1px solid #07F;
 		background-color: #07F;
 	}
 }
@@ -378,13 +380,13 @@ input, button, textarea {
 		border: 1px solid $color-gray-200;
 		//background-color: #F3F4F6;
 		margin: 0;
-		transition: background-color $duration-normal;
+		transition: background-color $duration-normal, border $duration-normal;
 	}
 
 	.swiper-button-prev:hover,
 	.swiper-button-next:hover {
-		//border: 2px solid $color-white;
-		background-color: $color-blue-400;
+		border: 1px solid $color-blue-300;
+		background-color: $color-blue-300;
 	}
 
 	.swiper-button-prev::after,

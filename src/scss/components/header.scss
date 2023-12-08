@@ -1,5 +1,5 @@
 .header {
-	position: fixed;
+	position: absolute;
 	height: 86px;
 	top: 0;
 	left: 0;
@@ -13,6 +13,11 @@
 	z-index: 2;
 
 	&.fixed {
+		position: fixed;
+		height: 86px;
+		top: 0;
+		left: 0;
+		right: 0;
 		max-width: 1840px;
 		border-radius: 0 0 12px 12px;
 		background-color: $color-white;
@@ -21,6 +26,7 @@
 	}
 
 	@include desktop-xs() {
+		position: fixed;
 		height: auto;
 		background-color: $color-white;
 		padding: 12px;
@@ -76,7 +82,9 @@
 			height: 100vh;
 			pointer-events: none;
 			overflow-y: auto;
-			transform: scaleY(0);
+			//transform: scaleY(0);
+			transform: translateY(-100%);
+			opacity: 0;
 			transform-origin: top;
 			transition: top $duration-normal, opacity $duration-normal, transform $duration-normal;
 			background-color: $color-white;
@@ -84,7 +92,8 @@
 			&.active {
 				//top: 64px;
 				opacity: 1;
-				transform: scaleY(1);
+				transform: translateY(0);
+				//transform: scaleY(1);
 				pointer-events: all;
 			}
 		}
@@ -93,7 +102,7 @@
 
 
 			@include desktop-xs() {
-				height: calc(100% - 70px);
+				height: calc(100% - 150px);
 				overflow-y: scroll;
 				padding: 0 0 70px 0;
 
@@ -168,6 +177,10 @@
 		display: flex;
 		align-items: center;
 		gap: 16px;
+
+		@include mobile() {
+			gap: 8px;
+		}
 
 		&-phone {
 

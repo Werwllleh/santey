@@ -12,7 +12,7 @@
 	&__header {
 		display: flex;
 		align-items: flex-start;
-		justify-content: space-between;
+		//justify-content: space-between;
 		gap: 16px;
 		margin: 0 0 160px 0;
 
@@ -22,10 +22,10 @@
 		}
 	}
 	&__title {
-		flex: 0 1 auto;
+		flex: 0 1 500px;
 
-		@include desktop() {
-			flex: 0 1 30%;
+		@include tablet() {
+			flex: 0 1 auto;
 		}
 
 		@include tablet() {
@@ -70,6 +70,10 @@
 	.card:nth-child(2) {
 		.card-name {
 			max-width: 150px;
+
+			@include mobile() {
+				max-width: none;
+			}
 		}
 	}
 }
