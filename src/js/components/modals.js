@@ -1,7 +1,9 @@
 // Open modal
 import {getScrollbarWidth} from "../main";
 
-const modalLinks = document.querySelectorAll('[data-modal]')
+const header = document.querySelector('.header');
+
+const modalLinks = document.querySelectorAll('[data-modal]');
 if (modalLinks.length) {
 	modalLinks.forEach((link) => {
 		link.addEventListener('click', (e) => {
@@ -37,6 +39,7 @@ export const openModal = (modalId) => {
 	}
 
 	document.body.style.paddingRight = getScrollbarWidth() + 'px';
+	header.style.right = getScrollbarWidth() + 'px';
 	modal.classList.add('modal--show')
 	setTimeout(() => {
 		modal.classList.add('modal--shown')
@@ -50,12 +53,15 @@ function closeModal(isModalFromModal = false) {
 	if (!modal) return
 
 	modal.classList.remove('modal--shown')
-    document.body.style.paddingRight = 0;
+
 	if (!isModalFromModal) hideBackdrop()
 	setTimeout(() => {
 		modal.classList.remove('modal--show')
+		document.body.style.paddingRight = '';
+		document.body.style.overflow = '';
+		header.style.right = '';
 		if (!isModalFromModal && !mobileMenu.classList.contains('active')) {
-			document.body.style.overflow = 'auto'
+
 		}
 	}, 350, modal)
 }

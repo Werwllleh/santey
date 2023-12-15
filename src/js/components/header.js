@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 				link.closest('.header__nav').classList.remove('active');
 				mobileMenuBurger.children[0].classList.remove('hide');
 				mobileMenuBurger.children[1].classList.add('hide');
-				document.body.style.overflow = 'auto';
+				document.body.style.overflow = '';
 			}
 		});
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 					link.closest('.header__nav').classList.remove('active');
 					mobileMenuBurger.children[0].classList.remove('hide');
 					mobileMenuBurger.children[1].classList.add('hide');
-					document.body.style.overflow = 'auto';
+					document.body.style.overflow = '';
 				}
 				window.scrollTo({
 					top: targetElement.offsetTop,
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 	if (window.outerWidth <= 1200) {
 		mobileMenu.classList.remove('active');
-		document.body.style.overflow = 'auto';
+		document.body.style.overflow = '';
 	}
 
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 			mobileMenuBurger.children[1].classList.add('hide');
 
 			mobileMenu.classList.remove('active');
-			document.body.style.overflow = 'auto';
+			document.body.style.overflow = '';
 
 		}
 
