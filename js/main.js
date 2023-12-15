@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         link.closest('.header__nav').classList.remove('active');
         mobileMenuBurger.children[0].classList.remove('hide');
         mobileMenuBurger.children[1].classList.add('hide');
-        document.body.style.overflow = 'auto';
+        document.body.style.overflow = '';
       }
     });
     link.addEventListener('click', function (e) {
@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
           link.closest('.header__nav').classList.remove('active');
           mobileMenuBurger.children[0].classList.remove('hide');
           mobileMenuBurger.children[1].classList.add('hide');
-          document.body.style.overflow = 'auto';
+          document.body.style.overflow = '';
         }
         window.scrollTo({
           top: targetElement.offsetTop,
@@ -312,7 +312,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
   });
   if (window.outerWidth <= 1200) {
     mobileMenu.classList.remove('active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = '';
   }
   mobileMenuBurger.addEventListener('click', function () {
     mobileMenuBurger.classList.toggle('active');
@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       mobileMenuBurger.children[0].classList.remove('hide');
       mobileMenuBurger.children[1].classList.add('hide');
       mobileMenu.classList.remove('active');
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = '';
     }
   });
 });
@@ -345,6 +345,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../main */ "./src/js/main.js");
 // Open modal
 
+var header = document.querySelector('.header');
 var modalLinks = document.querySelectorAll('[data-modal]');
 if (modalLinks.length) {
   modalLinks.forEach(function (link) {
@@ -375,6 +376,7 @@ var openModal = function openModal(modalId) {
     showBackdrop();
   }
   document.body.style.paddingRight = Object(_main__WEBPACK_IMPORTED_MODULE_0__["getScrollbarWidth"])() + 'px';
+  header.style.right = Object(_main__WEBPACK_IMPORTED_MODULE_0__["getScrollbarWidth"])() + 'px';
   modal.classList.add('modal--show');
   setTimeout(function () {
     modal.classList.add('modal--shown');
@@ -388,13 +390,13 @@ function closeModal() {
   var mobileMenu = document.querySelector('.header__nav');
   if (!modal) return;
   modal.classList.remove('modal--shown');
-  document.body.style.paddingRight = 0;
   if (!isModalFromModal) hideBackdrop();
   setTimeout(function () {
     modal.classList.remove('modal--show');
-    if (!isModalFromModal && !mobileMenu.classList.contains('active')) {
-      document.body.style.overflow = 'auto';
-    }
+    document.body.style.paddingRight = '';
+    document.body.style.overflow = '';
+    header.style.right = '';
+    if (!isModalFromModal && !mobileMenu.classList.contains('active')) {}
   }, 350, modal);
 }
 
