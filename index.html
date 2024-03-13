@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta name="application-name" content="&amp;nbsp;">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="mstile-144x144.png">
+		<link rel="icon" href="./favicon.ico">
+		<link rel="icon" href="./images/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" href="./images/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="stylesheet" href="./css/main.css?v=1710319351616">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__body">
+				<div class="header__logo">
+					<svg>
+						<use xlink:href="./images/sprites.svg#logo"></use>
+					</svg>
+				</div>
+				<nav class="header__nav">
+					<div class="header__nav-body">
+						<ul class="header__nav-list">
+							<li class="header__nav-item"><a class="header__nav-link" href="#about">О нас</a></li>
+							<li class="header__nav-item"><a class="header__nav-link" href="#services">Услуги</a></li>
+							<li class="header__nav-item"><a class="header__nav-link" href="#orders">Выполненные заказы</a></li>
+							<li class="header__nav-item"><a class="header__nav-link" href="#ask-question">Помощь с поиском</a></li>
+							<li class="header__nav-item"><a class="header__nav-link" href="#contacts">Контакты</a></li>
+						</ul>
+						<div class="header__nav-mobile">
+							<div class="header__nav-mobile-buttons"><a class="header__nav-mobile-button-request btn btn-blue btn-l button-text-l" data-modal="request">Оставить заявку</a><a class="header__nav-mobile-button-question btn btn-l button-text-l" data-modal="question">Задать вопрос</a></div>
+							<div class="header__nav-mobile-footer">
+								<div class="footer-content__column">
+									<div class="footer-content__info"><a class="footer-content__info-contact" href="tel:+74993467422">+7 (499) 346-74-22</a>
+										<p class="footer-content__info-note text-m-compact">Звонок бесплатный</p>
+									</div>
+									<div class="footer-content__info"><a class="footer-content__info-contact" href="mailto: info@santey.org">info@santey.org</a>
+										<p class="footer-content__info-note text-m-compact">По всем вопросам</p>
+									</div>
+									<div class="footer-content__info">
+										<div class="footer-content__info-socials"><a class="footer-content__info-socials-btn social-btn whats-app-btn" target="_blank" href="#">
+												<svg>
+													<use xlink:href="./images/sprites.svg#whats-app-icon"></use>
+												</svg></a><a class="footer-content__info-socials-btn social-btn vk-app-btn" target="_blank" href="#">
+												<svg>
+													<use xlink:href="./images/sprites.svg#vk-icon"></use>
+												</svg></a></div>
+									</div>
+								</div>
+								<div class="footer-content__column">
+									<div class="footer-content__address">
+										<h3 class="h3 footer-content__address-title">Офис</h3>
+										<p class="footer-content__address-info text-m-compact">142100, Московская обл., г. Подольск, ул. Федорова, д. 34, ЭТ/ПОМ/КАБ 2/1/202</p>
+									</div>
+									<div class="footer-content__address">
+										<h3 class="h3 footer-content__address-title">Склад</h3>
+										<p class="footer-content__address-info text-m-compact">Московская область , городской округ Подольск, Индустриальный Парк Коледино</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="header__right"><a class="header__right-phone" href="tel:+74993467422" data-modal="phone"><span>+7 (499) 346-74-22</span>
+						<div class="header__right-phone-icon">
+							<svg>
+								<use xlink:href="./images/sprites.svg#phone"></use>
+							</svg>
+						</div></a><a class="header__right-button header__right-button-request btn btn-blue btn-m button-text-m" data-modal="request">Оставить заявку</a><a class="header__right-button-burger">
+						<div class="header__right-button-burger-icon">
+							<svg>
+								<use xlink:href="./images/sprites.svg#burger"></use>
+							</svg>
+						</div>
+						<div class="header__right-button-burger-close hide">
+							<svg>
+								<use xlink:href="./images/sprites.svg#close"></use>
+							</svg>
+						</div></a></div>
+			</div>
+		</header>
+		<main class="main">
+			<!--include pug/pages/main-->
+			<!-- section-primary-->
+			<section class="main-section-primary">
+				<div class="container">
+					<div class="main-section-primary__info">
+						<h1 class="h1 main-section-primary__info-title">Организуем поставку импортных материалов и&nbsp;их&nbsp;аналогов</h1>
+						<div class="main-section-primary__info-buttons"><a class="main-section-primary__btn-request btn btn-blue btn-l button-text-l" data-modal="request">Оставить заявку</a><a class="main-section-primary__btn-question btn btn-l button-text-l" data-modal="question">Задать вопрос</a></div>
+					</div>
+				</div>
+				<div class="main-section-primary__bg"></div>
+			</section>
+			<!-- section-about-->
+			<section class="section-about" id="about">
+				<div class="container">
+					<div class="section-about__body">
+						<div class="section-about__header">
+							<h2 class="h2 section-about__title">О нас</h2>
+							<div class="section-about__text">
+								<p class="section-about__subtitle">Мы занимаемся поиском альтернатив для товаров Европейских производителей в странах Персидского залива, Индии и Китая</p>
+								<div class="section-about__description text-m">
+									<p>Налаженные цепочки поставок дают нам преимущества в оперативном подборе товара, его сертификации и доставке конечному клиенту.</p>
+									<p>Наша цель — это поддержка Российских предприятий необходимыми товарами для беспрерывной работы.</p>
+								</div>
+							</div>
+						</div>
+						<div class="section-about__card">
+							<div class="cards">
+								<div class="cards-body">
+									<div class="card">
+										<div class="card-icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#earth"></use>
+											</svg>
+										</div>
+										<h3 class="h3 card-name">Работаем с производителями, ушедшими с российского рынка</h3>
+									</div>
+									<div class="card">
+										<div class="card-icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#building"></use>
+											</svg>
+										</div>
+										<h3 class="h3 card-name">На рынке с 2017 года</h3>
+									</div>
+									<div class="card">
+										<div class="card-icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#users"></use>
+											</svg>
+										</div>
+										<h3 class="h3 card-name">Более 50 постоянных клиентов</h3>
+									</div>
+									<div class="card">
+										<div class="card-icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#package"></use>
+											</svg>
+										</div>
+										<h3 class="h3 card-name">Более 200 поставок в год</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-services-->
+			<section class="section-services" id="services">
+				<div class="container">
+					<h2 class="h2 section-services__title">Оказываем весь комплекс транспортных и логистических услуг под ключ</h2>
+					<div class="section-services-assortment"><a class="section-services-assortment__card" href="#" data-modal="request">
+							<div class="section-services-assortment__card-info">
+								<h3 class="h3 section-services-assortment__card-title">Поставка химической продукции, ушедшей с Российского рынка</h3>
+								<div class="section-services-assortment__card-arrow"><span>
+										<svg>
+											<use xlink:href="./images/sprites.svg#arrow-right"></use>
+										</svg></span></div>
+							</div>
+							<div class="section-services-assortment__card-image"><img src="./images/services/services1.png"></div></a><a class="section-services-assortment__card" href="#" data-modal="request">
+							<div class="section-services-assortment__card-info">
+								<h3 class="h3 section-services-assortment__card-title">Поиск альтернатив для товаров, ушедших с Российского рынка</h3>
+								<div class="section-services-assortment__card-arrow"><span>
+										<svg>
+											<use xlink:href="./images/sprites.svg#arrow-right"></use>
+										</svg></span></div>
+							</div>
+							<div class="section-services-assortment__card-image"><img src="./images/services/services2.png"></div></a><a class="section-services-assortment__card" href="#" data-modal="request">
+							<div class="section-services-assortment__card-info">
+								<h3 class="h3 section-services-assortment__card-title">Поставка запчастей для строительной техники</h3>
+								<p class="section-services-assortment__card-text text-m-compact">более 15 лет специализируемся на поставке широкого ассортимента запасных частей для грузовой, горной и дорожно-строительной техники.</p>
+								<div class="section-services-assortment__card-arrow"><span>
+										<svg>
+											<use xlink:href="./images/sprites.svg#arrow-right"></use>
+										</svg></span></div>
+							</div>
+							<div class="section-services-assortment__card-image section-services-assortment__card-image-desctop"><img src="./images/services/services3.png"></div>
+							<div class="section-services-assortment__card-image section-services-assortment__card-image-mobile"><img src="./images/services/services3-mobile.png"></div></a><a class="section-services-assortment__card" href="#" data-modal="request">
+							<div class="section-services-assortment__card-info">
+								<h3 class="h3 section-services-assortment__card-title">Организация поставок малогабаритных товаров</h3>
+								<div class="section-services-assortment__card-arrow"><span>
+										<svg>
+											<use xlink:href="./images/sprites.svg#arrow-right"></use>
+										</svg></span></div>
+							</div>
+							<div class="section-services-assortment__card-image"><img src="./images/services/services4.png"></div></a><a class="section-services-assortment__card" href="#" data-modal="request">
+							<div class="section-services-assortment__card-info">
+								<h3 class="h3 section-services-assortment__card-title">Перевозки
+ из стран Европы</h3>
+								<div class="section-services-assortment__card-arrow"><span>
+										<svg>
+											<use xlink:href="./images/sprites.svg#arrow-right"></use>
+										</svg></span></div>
+							</div>
+							<div class="section-services-assortment__card-image"><img src="./images/services/services5.png"></div></a><a class="section-services-assortment__card" id="document">
+							<div class="section-services-assortment__card-info" href="./images/services/document-iso.jpg">
+								<h3 class="h3 section-services-assortment__card-title">Качество услуг подтверждается сертификатом ISO 9001</h3>
+								<div class="section-services-assortment__card-arrow"><span>
+										<svg>
+											<use xlink:href="./images/sprites.svg#arrow-right"></use>
+										</svg></span></div>
+								<div class="section-services-assortment__card-image section-services-assortment__card-image-desctop"><img src="./images/services/services6.png"></div>
+								<div class="section-services-assortment__card-image section-services-assortment__card-image-mobile"><img src="./images/services/services6-mobile.png"></div>
+							</div></a>
+					</div>
+				</div>
+			</section>
+			<!-- section-problems-->
+			<section class="section-problems" id="about">
+				<div class="container">
+					<h2 class="h2 section-problems__title">Решение проблем берем на себя</h2>
+					<div class="section-problems__cards">
+						<div class="cards">
+							<div class="cards-body">
+								<div class="card">
+									<div class="card-icon">
+										<svg>
+											<use xlink:href="./images/sprites.svg#search-earth"></use>
+										</svg>
+									</div>
+									<h3 class="h3 card-name">Подбор</h3>
+									<p class="card-text text-m-compact">Находим то, что вы хотите в странах, не участвовавших в соглашении</p>
+								</div>
+								<div class="card">
+									<div class="card-icon">
+										<svg>
+											<use xlink:href="./images/sprites.svg#currency-convert"></use>
+										</svg>
+									</div>
+									<h3 class="h3 card-name">Закупка</h3>
+									<p class="card-text text-m-compact">Сами конвертируем рубли в нужную валюту</p>
+								</div>
+								<div class="card">
+									<div class="card-icon">
+										<svg>
+											<use xlink:href="./images/sprites.svg#clipboard-text"></use>
+										</svg>
+									</div>
+									<h3 class="h3 card-name">Оформление</h3>
+									<p class="card-text text-m-compact">Гарантируем чистоту сделки и предоставляем необходимые документы</p>
+								</div>
+								<div class="card">
+									<div class="card-icon">
+										<svg>
+											<use xlink:href="./images/sprites.svg#translate"></use>
+										</svg>
+									</div>
+									<h3 class="h3 card-name">Языковой барьер</h3>
+									<p class="card-text text-m-compact">Сотрудники владеют Турецким, Китайским и Английским языком</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-partners-->
+			<section class="section-partners" id="about">
+				<div class="container">
+					<h2 class="h2 section-partners__title">Наши партнеры и заказчики</h2>
+					<p class="section-partners__subtitle text-m">С нами сотрудничают крупнейшие предприятия из сфер: черной и цветной металлургии, горнорудной и угольной промышленности, нефтедобывающей и нефтеперерабатывающей промышленности.</p>
+					<div class="section-partners__logos">
+						<div class="section-partners__logo"><img src="./images/partners/basf.svg"></div>
+						<div class="section-partners__logo"><img src="./images/partners/lika.svg"></div>
+						<div class="section-partners__logo"><img src="./images/partners/master-builders.svg"></div>
+						<div class="section-partners__logo"><img src="./images/partners/akzonobel.svg"></div>
+						<div class="section-partners__logo"><img src="./images/partners/jcb.svg"></div>
+					</div>
+				</div>
+			</section>
+			<!-- section-procedure-->
+			<section class="section-procedure">
+				<div class="container">
+					<h2 class="h2 section-procedure__title">Как мы работаем</h2>
+					<div class="section-procedure__steps">
+						<div class="section-procedure__step">
+							<div class="section-procedure__step-number button-text-m">1</div>
+							<div class="section-procedure__step-info">
+								<h3 class="h3 section-procedure__step-title">Получаем запрос от клиента</h3>
+							</div>
+						</div>
+						<div class="section-procedure__step">
+							<div class="section-procedure__step-number button-text-m">2</div>
+							<div class="section-procedure__step-info">
+								<h3 class="h3 section-procedure__step-title">Организуем поиск и делаем расчет доставки необходимого товара под ключ</h3>
+							</div>
+						</div>
+						<div class="section-procedure__step">
+							<div class="section-procedure__step-number button-text-m">3</div>
+							<div class="section-procedure__step-info">
+								<h3 class="h3 section-procedure__step-title">Если клиента устраивает цена и сроки, то подписываем договор</h3>
+							</div>
+						</div>
+						<div class="section-procedure__step">
+							<div class="section-procedure__step-number button-text-m">4</div>
+							<div class="section-procedure__step-info">
+								<h3 class="h3 section-procedure__step-title">Заключаем договор на перевозку и подбираем транспорт под ваш груз</h3>
+								<p class="section-procedure__step-text text-m">Везем продукцию напрямую с заводов изготовителей с минимальной наценкой. Работаем с «ПЭК», «Деловые Линии» и «Росжелдор». Вы можете выбрать любую траспортную компанию для доставки груза с нашего склада или вывезти его своими силами.</p>
+							</div>
+						</div>
+						<div class="section-procedure__step">
+							<div class="section-procedure__step-number button-text-m">5</div>
+							<div class="section-procedure__step-info">
+								<h3 class="h3 section-procedure__step-title">Получаем предоплату за товар</h3>
+							</div>
+						</div>
+						<div class="section-procedure__step">
+							<div class="section-procedure__step-number button-text-m">6</div>
+							<div class="section-procedure__step-info">
+								<h3 class="h3 section-procedure__step-title">Организовываем доставку груза</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-request-->
+			<section class="section-request" id="request">
+				<div class="container">
+					<div class="section-request__body">
+						<form class="section-request__form form">
+							<h2 class="h2 section-request__form-title form__title">Поставим любое иностранное оборудование</h2>
+							<div class="form__fields">
+								<div class="section-request__form-field form__field">
+									<div class="form__field-title caption">Тип груза</div>
+									<input class="form__field-input" type="text" required minlength="3">
+								</div>
+								<div class="form__field-row">
+									<div class="section-request__form-field form__field">
+										<div class="form__field-title caption">Объем, м3</div>
+										<input class="form__field-input" type="number" inputmode="decimal" required min="0">
+									</div>
+									<div class="section-request__form-field form__field">
+										<div class="form__field-title caption">Вес, кг</div>
+										<input class="form__field-input" type="number" inputmode="decimal" required min="0">
+									</div>
+								</div>
+								<div class="form__field-row">
+									<div class="section-request__form-field form__field">
+										<div class="form__field-title caption">Откуда</div>
+										<input class="form__field-input" type="text" required minlength="3">
+									</div>
+									<div class="section-request__form-field form__field">
+										<div class="form__field-title caption">Куда</div>
+										<input class="form__field-input" type="text" required minlength="3">
+									</div>
+								</div>
+								<div class="section-request__form-field form__field">
+									<div class="form__field-title caption">Ваше имя</div>
+									<input class="form__field-input" type="text" required name="name" minlength="3">
+								</div>
+								<div class="section-request__form-field form__field">
+									<div class="form__field-title caption">Номер телефона</div>
+									<input class="form__field-input" type="tel" required name="phone" placeholder="+7 (___) ___-__-__">
+								</div>
+								<button class="btn btn-blue btn-m form__field-submit" type="submit" data-button="Оставить заявку">Оставить заявку</button>
+							</div>
+							<div class="form__footer caption">Нажимая на кнопку «Оставить заявку», Вы даете согласие на обработку <a href="#">персональных данных</a></div>
+						</form>
+					</div>
+				</div>
+				<div class="section-request__bg"></div>
+			</section>
+			<!-- section-orders-->
+			<section class="section-orders" id="orders">
+				<div class="container">
+					<h2 class="h2 section-orders__title">Выполненные заказы</h2>
+					<div class="section-orders__slides">
+						<div class="section-orders__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="section-orders__slide">
+										<div class="section-orders__slide-left">
+											<div class="section-orders__slide-header">
+												<h3 class="h3 section-orders__slide-title">Поставка грузовых запчастей оптом с завода производителя</h3>
+												<div class="section-orders__slide-tags">
+													<p class="section-orders__slide-tag">Доставка из Китая</p>
+													<p class="section-orders__slide-tag">Срок 10 дней</p>
+												</div>
+											</div>
+										</div>
+										<div class="section-orders__slide-right">
+											<div class="section-orders__slide-customer">
+												<p class="section-orders__slide-customer-name text-m">Николай Камышев</p>
+												<p class="section-orders__slide-customer-about caption">Генеральный директор «Название компании»</p>
+											</div>
+											<div class="section-orders__slide-text">
+												<p>1. Выбрали оптимальный по цене, времени и безопасности маршрут<br> 2. Груз с завода изготовителя доставили на склад «Авроры» в Шанхае<br> 3. Упаковали, занялись подготовкой к транспортировке, консолидацией и оформлением документов по затаможке<br> 4. Период консолидации — 3 дня. Товар хранился на складе бесплатно<br> 5. Заполненный контейнер поставлен на погрузку в порт Шанхая, проследовал без остановок до Владивостока. Транспортировка по морю — 3 дня.<br> 6. Процедура таможенного оформления прошла без проблем. Контейнер по железной дороге отправился в Москву</p>
+											</div>
+											<div class="section-orders__slide-additions"><img src="./images/order-review-plug.jpg">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="section-orders__slide">
+										<div class="section-orders__slide-left">
+											<div class="section-orders__slide-header">
+												<h3 class="h3 section-orders__slide-title">Поставки химических товаров</h3>
+												<div class="section-orders__slide-tags">
+													<p class="section-orders__slide-tag">Доставка из Германии</p>
+													<p class="section-orders__slide-tag">Срок 6 дней</p>
+												</div>
+											</div>
+										</div>
+										<div class="section-orders__slide-right">
+											<div class="section-orders__slide-customer">
+												<p class="section-orders__slide-customer-name text-m">Елена Мацевич</p>
+												<p class="section-orders__slide-customer-about caption">Генеральный директор «Название компании»</p>
+											</div>
+											<div class="section-orders__slide-text">
+												<p>Наша организация не впервые обращалась с задачей разработать химический продукт с определенными показателями для наших потребностей. Работаем с менеджерами слажено, в процессе работы никогда не было нареканий, все оперативно, качественно.</p>
+												<p>Товар хорошо упакован, документы правильно оформлены. Желаем Вашей компании успехов и процветания</p>
+											</div>
+											<div class="section-orders__slide-additions"><img src="./images/order-review-plug.jpg">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="section-orders__slide">
+										<div class="section-orders__slide-left">
+											<div class="section-orders__slide-header">
+												<h3 class="h3 section-orders__slide-title">Поставка запчастей для строительной техники</h3>
+												<div class="section-orders__slide-tags">
+													<p class="section-orders__slide-tag">Доставка из Китая</p>
+													<p class="section-orders__slide-tag">Срок 12 дней</p>
+												</div>
+											</div>
+										</div>
+										<div class="section-orders__slide-right">
+											<div class="section-orders__slide-customer">
+												<p class="section-orders__slide-customer-name text-m">Иван Николаев</p>
+												<p class="section-orders__slide-customer-about caption">Генеральный директор «Название компании»</p>
+											</div>
+											<div class="section-orders__slide-text">
+												<p>Я очень доволен клиентоориентированностью , так как отгрузить запчасти мне было необходимо в выходной день, зная об этом, я заранее предупредил компанию и экспа со своей стороны выделила менеджера, который вышел в выходной.</p>
+												<p>Прошу отдельно поблагодарить менеджера, который работал в выходной день. И хочу выразить огромную благодарность компании за своевременную поставку запчастей, что в последующем помогло мне сохранить сроки уже перед моим заказчиком.</p>
+											</div>
+											<div class="section-orders__slide-additions"><img src="./images/order-review-plug.jpg">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section-orders__navigation custom-arrows">
+						<div class="swiper-button-prev custom-arrow custom-arrow-prev section-orders__navigation-arrow-prev"></div>
+						<div class="swiper-button-next custom-arrow custom-arrow-next section-orders__navigation-arrow-next"></div>
+					</div>
+				</div>
+			</section>
+			<!-- section-ask-question-->
+			<section class="section-ask-question" id="ask-question">
+				<div class="container">
+					<div class="section-ask-question__body">
+						<div class="section-ask-question__title">
+							<h2 class="h2 section-ask-question__title">Остались вопросы? <br> Задайте их нашему менеджеру</h2>
+						</div>
+						<form class="section-ask-question__form form">
+							<div class="form__fields">
+								<div class="section-ask-question__form-field form__field">
+									<div class="form__field-title caption">Ваше имя</div>
+									<input class="form__field-input" type="text" name="name" required minlength="3">
+								</div>
+								<div class="section-ask-question__form-field form__field">
+									<div class="form__field-title caption">Номер телефона</div>
+									<input class="form__field-input" type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+								</div>
+								<div class="section-ask-question__form-field form__field">
+									<div class="form__field-title caption">Ваш вопрос</div>
+									<textarea class="form__field-input form__field-input-textarea" required name="text" minlength="15"></textarea>
+								</div>
+								<button class="btn btn-blue btn-m form__field-submit" type="submit" data-button="Задать вопрос">Задать вопрос</button>
+							</div>
+							<div class="form__footer caption">Нажимая на кнопку «Задать вопрос», Вы даете согласие на обработку <a href="#">персональных данных</a></div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" id="contacts">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-content__column">
+						<div class="footer-content__info"><a class="footer-content__info-contact" href="tel:+74993488749">+7 (499) 348-87-49</a>
+							<p class="footer-content__info-note text-m-compact">Звонок бесплатный</p>
+						</div>
+						<div class="footer-content__info"><a class="footer-content__info-contact" href="mailto: info@santey.org">info@santey.org</a>
+							<p class="footer-content__info-note text-m-compact">По всем вопросам</p>
+						</div>
+						<div class="footer-content__info">
+							<div class="footer-content__info-socials"><a class="footer-content__info-socials-btn social-btn whats-app-btn" target="_blank" href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#whats-app-icon"></use>
+									</svg></a><a class="footer-content__info-socials-btn social-btn vk-app-btn" target="_blank" href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#vk-icon"></use>
+									</svg></a></div>
+						</div>
+					</div>
+					<div class="footer-content__column">
+						<div class="footer-content__address">
+							<h3 class="h3 footer-content__address-title">Офис</h3>
+							<p class="footer-content__address-info text-m-compact">142100, Московская обл., г. Подольск, <br> ул. Федорова, д. 34, ЭТ/ПОМ/КАБ 2/1/202</p>
+						</div>
+						<div class="footer-content__address">
+							<h3 class="h3 footer-content__address-title">Склад</h3>
+							<p class="footer-content__address-info text-m-compact">Московская область , городской округ Подольск, <br> Индустриальный Парк Коледино</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-bottom__left">
+						<div class="footer-bottom__left-copyright"><span class="footer-bottom__left-copyright-year"></span>, Santey</div><a class="footer-bottom__left-link-pdn" href="#">Обработка персональных данных</a>
+					</div>
+					<div class="footer-bottom__right"></div>
+				</div>
+			</div>
+		</footer>
+		<!-- Modal Question-->
+		<div class="modal" id="modal-question">
+			<div class="modal__window modal-question">
+				<div class="modal__close-wrap">
+					<button class="modal__close-btn js-modal-close"></button>
+				</div>
+				<div class="container">
+					<div class="modal__body">
+						<div class="modal__body-left">
+							<h2 class="h2 modal__title">Задать вопрос</h2>
+							<div class="modal__text text-m-compact">
+								<p>Менеджер свяжется с вами в ближайшее время.</p>
+								<p>Либо напишите нам на почту <a href="mailto:info@santey.org">info@santey.org</a> или в соцсети</p>
+							</div>
+							<div class="modal__socials"><a class="modal__socials-btn social-btn whats-app-btn" target="_blank" href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#whats-app-icon"></use>
+									</svg></a><a class="modal__socials-btn social-btn vk-app-btn" target="_blank" href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#vk-icon"></use>
+									</svg></a></div>
+						</div>
+						<div class="modal__body-right">
+							<form class="modal__form form">
+								<div class="form__fields">
+									<div class="section-ask-question__form-field form__field">
+										<div class="form__field-title caption">Ваше имя</div>
+										<input class="form__field-input" type="text" required name="name" minlength="3">
+									</div>
+									<div class="section-ask-question__form-field form__field">
+										<div class="form__field-title caption">Номер телефона</div>
+										<input class="form__field-input" type="tel" required name="phone" placeholder="+7 (___) ___-__-__">
+									</div>
+									<div class="section-ask-question__form-field form__field">
+										<div class="form__field-title caption">Ваш вопрос</div>
+										<textarea class="form__field-input form__field-input-textarea" required name="text" minlength="15"></textarea>
+									</div>
+									<button class="btn btn-blue btn-m form__field-submit" type="submit">Задать вопрос</button>
+								</div>
+								<div class="form__footer caption">Нажимая на кнопку «Задать вопрос», Вы даете согласие на обработку <a href="#">персональных данных</a></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Request-->
+		<div class="modal" id="modal-request">
+			<div class="modal__window modal-request">
+				<div class="modal__close-wrap">
+					<button class="modal__close-btn js-modal-close"></button>
+				</div>
+				<div class="container">
+					<div class="modal__body">
+						<div class="modal__body-left">
+							<h2 class="h2 modal__title">Оставить заявку</h2>
+							<div class="modal__text text-m-compact">
+								<p>Менеджер свяжется с вами в ближайшее время.</p>
+								<p>Либо напишите нам на почту <a href="mailto:info@santey.org">info@santey.org</a> или в соцсети</p>
+							</div>
+							<div class="modal__socials"><a class="modal__socials-btn social-btn whats-app-btn" target="_blank" href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#whats-app-icon"></use>
+									</svg></a><a class="modal__socials-btn social-btn vk-app-btn" target="_blank" href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#vk-icon"></use>
+									</svg></a></div>
+						</div>
+						<div class="modal__body-right">
+							<form class="modal__form form">
+								<div class="form__fields">
+									<div class="section-ask-question__form-field form__field">
+										<div class="form__field-title caption">Ваше имя</div>
+										<input class="form__field-input" type="text" required name="name" minlength="3">
+									</div>
+									<div class="section-ask-question__form-field form__field">
+										<div class="form__field-title caption">Номер телефона</div>
+										<input class="form__field-input" type="tel" required name="phone" placeholder="+7 (___) ___-__-__">
+									</div>
+									<button class="btn btn-blue btn-m form__field-submit" type="submit">Оставить заявку</button>
+								</div>
+								<div class="form__footer caption">Нажимая на кнопку «Задать вопрос», Вы даете согласие на обработку <a href="#">персональных данных</a></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Request-->
+		<div class="modal" id="modal-phone">
+			<div class="modal__window modal-phone">
+				<div class="modal__close-wrap">
+					<button class="modal__close-btn js-modal-close"></button>
+				</div>
+				<div class="container">
+					<div class="modal-phone__body">
+						<div class="footer-content__column">
+							<div class="footer-content__info"><a class="footer-content__info-contact" href="tel:+74993467422">+7 (499) 346-74-22</a>
+								<p class="footer-content__info-note text-m-compact">Звонок бесплатный</p>
+							</div>
+							<div class="footer-content__info"><a class="footer-content__info-contact" href="mailto: info@santey.org">info@santey.org</a>
+								<p class="footer-content__info-note text-m-compact">По всем вопросам</p>
+							</div>
+							<div class="footer-content__info">
+								<div class="footer-content__info-socials"><a class="footer-content__info-socials-btn social-btn whats-app-btn" target="_blank" href="#">
+										<svg>
+											<use xlink:href="./images/sprites.svg#whats-app-icon"></use>
+										</svg></a><a class="footer-content__info-socials-btn social-btn vk-app-btn" target="_blank" href="#">
+										<svg>
+											<use xlink:href="./images/sprites.svg#vk-icon"></use>
+										</svg></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Success-->
+		<div class="modal" id="modal-success">
+			<div class="modal__window modal-success">
+				<div class="modal__close-wrap">
+					<button class="modal__close-btn js-modal-close"></button>
+				</div>
+				<div class="container">
+					<div class="modal-success__body"><img class="modal-success__img" src="./images/sprites/svg/success.svg" alt="success">
+						<h2 class="modal-success__title h2-t">Заявка отправлена</h2>
+						<p class="modal-success__subtitle text-m-compact">Спасибо за обращение. <br> Менеджер скоро с вами свяжется</p>
+						<button class="btn btn-blue btn-m modal-success__close js-modal-close button-text-m">Закрыть форму</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			if (!('IntersectionObserver' in window)) {
+				var script = document.createElement("script");
+				script.src = "https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js";
+				document.getElementsByTagName('head')[0].appendChild(script);
+			}
+		</script>
+		<script src="./js/vendor.js?v=1710319351617"></script>
+		<script src="./js/main.js?v=1710319351617"></script>
+	</body>
+</html>
