@@ -1,0 +1,62 @@
+-
+	var slides = [
+		{
+			title: 'Поставка грузовых запчастей оптом с завода производителя',
+			tags: ['Доставка из Китая', 'Срок 10 дней'],
+			name: 'Николай Камышев',
+			about: 'Генеральный директор «Название компании»',
+			text: [
+				'1. Выбрали оптимальный по цене, времени и безопасности маршрут<br> 2. Груз с завода изготовителя доставили на склад «Авроры» в Шанхае<br> 3. Упаковали, занялись подготовкой к транспортировке, консолидацией и оформлением документов по затаможке<br> 4. Период консолидации — 3 дня. Товар хранился на складе бесплатно<br> 5. Заполненный контейнер поставлен на погрузку в порт Шанхая, проследовал без остановок до Владивостока. Транспортировка по морю — 3 дня.<br> 6. Процедура таможенного оформления прошла без проблем. Контейнер по железной дороге отправился в Москву'
+			],
+			additions: ''
+		},
+		{
+			title: 'Поставки химических товаров',
+			tags: ['Доставка из Германии', 'Срок 6 дней'],
+			name: 'Елена Мацевич',
+			about: 'Генеральный директор «Название компании»',
+			text: ['Наша организация не впервые обращалась с задачей разработать химический продукт с определенными показателями для наших потребностей. Работаем с менеджерами слажено, в процессе работы никогда не было нареканий, все оперативно, качественно.', 'Товар хорошо упакован, документы правильно оформлены. Желаем Вашей компании успехов и процветания'],
+			additions: ''
+		},
+		{
+			title: 'Поставка запчастей для строительной техники',
+			tags: ['Доставка из Китая', 'Срок 12 дней'],
+			name: 'Иван Николаев',
+			about: 'Генеральный директор «Название компании»',
+			text: ['Я очень доволен клиентоориентированностью , так как отгрузить запчасти мне было необходимо в выходной день, зная об этом, я заранее предупредил компанию и экспа со своей стороны выделила менеджера, который вышел в выходной.', 'Прошу отдельно поблагодарить менеджера, который работал в выходной день. И хочу выразить огромную благодарность компании за своевременную поставку запчастей, что в последующем помогло мне сохранить сроки уже перед моим заказчиком.'],
+			additions: ''
+		},
+	]
+// section-orders
+section.section-orders#orders
+	.container
+		h2.h2.section-orders__title Выполненные заказы
+		.section-orders__slides
+			.section-orders__slider.swiper
+				.swiper-wrapper
+					for slide in slides
+						.swiper-slide
+							.section-orders__slide
+								.section-orders__slide-left
+									.section-orders__slide-header
+										h3.h3.section-orders__slide-title= slide.title
+										.section-orders__slide-tags
+											for tag in slide.tags
+												p.section-orders__slide-tag= tag
+								.section-orders__slide-right
+									.section-orders__slide-customer
+										p.section-orders__slide-customer-name.text-m= slide.name
+										p.section-orders__slide-customer-about.caption= slide.about
+									.section-orders__slide-text
+										for text in slide.text
+											p!= text
+									.section-orders__slide-additions
+										if (slide.additions)
+											img(src= slide.additions)
+										else
+											img(src='./images/order-review-plug.jpg')
+		.section-orders__navigation.custom-arrows
+			.swiper-button-prev.custom-arrow.custom-arrow-prev.section-orders__navigation-arrow-prev
+			.swiper-button-next.custom-arrow.custom-arrow-next.section-orders__navigation-arrow-next
+
+

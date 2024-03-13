@@ -1,0 +1,284 @@
+.header {
+	position: absolute;
+	height: 86px;
+	top: 0;
+	left: 0;
+	right: 0;
+	max-width: 1920px;
+	//width: 100%;
+	margin: 0 auto;
+	padding: 16px 32px;
+	background-color: transparent;
+	transition: max-width $duration-normal, padding $duration-normal, background-color $duration-normal;
+	z-index: 2;
+
+	&.fixed {
+		position: fixed;
+		height: 86px;
+		top: 0;
+		left: 0;
+		right: 0;
+		max-width: none;
+		border-radius: 0 0 12px 12px;
+		background-color: $color-white;
+		backdrop-filter: blur(12px);
+		padding: 16px;
+		margin: 0 32px;
+
+		@include laptop() {
+			margin: 0 12px;
+		}
+	}
+
+	@include desktop-xs() {
+		position: fixed;
+		height: auto;
+		background-color: $color-white;
+		padding: 12px;
+		border-radius: 0 0 12px 12px;
+	}
+
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		svg {
+			max-width: 194px;
+			width: 100%;
+			max-height: 44px;
+			height: 100%;
+
+			@include mobile() {
+				max-width: 141px;
+			}
+		}
+
+	}
+
+	.header-mobile-menu {
+
+		transition: background-color $duration-normal;
+
+		@include desktop-xs() {
+			background-color: $color-white;
+		}
+
+		.header__nav-mobile {
+			display: none;
+
+			@include desktop-xs() {
+				display: block;
+			}
+		}
+	}
+
+	&__nav {
+
+		@include desktop-xs() {
+			padding: 0 16px;
+			position: fixed;
+			z-index: 1;
+			top: 67px;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			pointer-events: none;
+			overflow-y: auto;
+			//transform: scaleY(0);
+			transform: translateY(-100%);
+			opacity: 0;
+			transform-origin: top;
+			transition: top $duration-normal, opacity $duration-normal, transform $duration-normal;
+			background-color: $color-white;
+
+			&.active {
+				//top: 64px;
+				opacity: 1;
+				transform: translateY(0);
+				//transform: scaleY(1);
+				pointer-events: all;
+			}
+		}
+
+		&-body {
+
+
+			@include desktop-xs() {
+				height: calc(100% - 150px);
+				overflow-y: scroll;
+				padding: 0 0 70px 0;
+
+				&::-webkit-scrollbar {
+					width: 0;
+				}
+			}
+		}
+
+		&-list {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+
+			@include desktop-xs() {
+				margin: 30px 0 0 0;
+				padding: 0 0 60px 0;
+				flex-direction: column;
+			}
+		}
+		&-item {
+
+		}
+		&-link {
+			padding: 8px;
+			white-space: nowrap;
+
+			@include desktop-xs() {
+				color: $color-gray-900;
+				font-family: $font-family-roboto-condensed;
+				font-size: 26px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 1.31;
+				letter-spacing: 0.26px;
+				text-transform: uppercase;
+			}
+		}
+
+		&-mobile {
+			display: none;
+			margin: 60px 0 0 0;
+
+			@include desktop-xs() {
+				display: block;
+			}
+
+
+			&-buttons {
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				margin: 0 0 60px 0;
+			}
+
+			&-button {
+
+				&-question {
+					background-color: #E9F2FF;
+					color: $color-blue-400;
+				}
+			}
+
+			&-footer {
+				display: flex;
+				flex-direction: column;
+				gap: 40px;
+			}
+		}
+	}
+	&__right {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+
+		@include mobile() {
+			gap: 8px;
+		}
+
+		&-phone {
+
+			@include desktop-xs() {
+				border-radius: 12px;
+				border: 1px solid $color-gray-200;
+				padding: 12px;
+			}
+
+			span {
+				color: $color-gray-800;
+				font-size: 17px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 1.35; /* 129.412% */
+				white-space: nowrap;
+
+				@include desktop-xs() {
+					display: none;
+				}
+			}
+
+			&-icon {
+				display: none;
+
+				svg {
+					width: 24px;
+					height: 24px;
+				}
+
+				@include desktop-xs() {
+					display: block;
+				}
+			}
+
+		}
+
+		&-button {
+
+			&-request {
+				max-width: 185px;
+				@include desktop-xs() {
+					display: none;
+				}
+			}
+
+			&-burger {
+				position: relative;
+				display: none;
+				border-radius: 12px;
+				border: 1px solid $color-gray-200;
+				padding: 12px;
+
+				@include desktop-xs() {
+					display: block;
+				}
+
+				&-icon {
+					transition: opacity $duration-normal, visibility $duration-normal;
+
+					svg {
+						width: 24px;
+						height: 24px;
+					}
+
+					&.hide {
+						opacity: 0;
+						visibility: hidden;
+					}
+				}
+				&-close {
+					position: absolute;
+					width: 24px;
+					height: 24px;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					margin: auto;
+					transition: opacity $duration-normal, visibility $duration-normal;
+
+					svg {
+						width: 24px;
+						height: 24px;
+					}
+
+					&.hide {
+						opacity: 0;
+						visibility: hidden;
+					}
+				}
+
+			}
+		}
+	}
+}

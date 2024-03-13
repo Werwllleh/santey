@@ -1,0 +1,35 @@
+// section-request
+section.section-request#request
+	.container
+		.section-request__body
+			form.section-request__form.form
+				h2.h2.section-request__form-title.form__title Поставим любое иностранное оборудование
+				.form__fields
+					.section-request__form-field.form__field
+						.form__field-title.caption Тип груза
+						input(type="text", required, minlength="3").form__field-input
+					.form__field-row
+						.section-request__form-field.form__field
+							.form__field-title.caption Объем, м3
+							input(type="number", inputmode="decimal", required, min="0").form__field-input
+						.section-request__form-field.form__field
+							.form__field-title.caption Вес, кг
+							input(type="number", inputmode="decimal", required, min="0").form__field-input
+					.form__field-row
+						.section-request__form-field.form__field
+							.form__field-title.caption Откуда
+							input(type="text", required, minlength="3").form__field-input
+						.section-request__form-field.form__field
+							.form__field-title.caption Куда
+							input(type="text", required, minlength="3").form__field-input
+					.section-request__form-field.form__field
+						.form__field-title.caption Ваше имя
+						input(type="text", required, name="name", minlength="3").form__field-input
+					.section-request__form-field.form__field
+						.form__field-title.caption Номер телефона
+						input(type="tel", required, name="phone", placeholder="+7 (___) ___-__-__").form__field-input
+					button.btn.btn-blue.btn-m.form__field-submit(type="submit" data-button="Оставить заявку") Оставить заявку
+				.form__footer.caption
+					| Нажимая на кнопку «Оставить заявку», Вы даете согласие на обработку 
+					a(href="#") персональных данных
+	.section-request__bg

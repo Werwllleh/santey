@@ -1,0 +1,38 @@
+-
+	var data = [
+		{
+			name: 'Работаем с производителями, ушедшими с российского рынка',
+			text: '',
+			svg: 'earth'
+		},
+		{
+			name: `На рынке с 2017 года`,
+			text: '',
+			svg: 'building'
+		},
+		{
+			name: 'Более 50 постоянных клиентов',
+			text: '',
+			svg: 'users'
+		},
+		{
+			name: 'Более 200 поставок в год',
+			text: '',
+			svg: 'package'
+		},
+	]
+// section-about
+section.section-about#about
+	.container
+		.section-about__body
+			.section-about__header
+				h2.h2.section-about__title О нас
+				.section-about__text
+					p.section-about__subtitle Мы занимаемся поиском альтернатив для товаров Европейских производителей в странах Персидского залива, Индии и Китая
+					.section-about__description.text-m
+						p Налаженные цепочки поставок дают нам преимущества в оперативном подборе товара, его сертификации и доставке конечному клиенту.
+						p Наша цель — это поддержка Российских предприятий необходимыми товарами для беспрерывной работы.
+			.section-about__card
+				+cards(data)
+
+

@@ -1,0 +1,30 @@
+.modal-success {
+	padding: 40px 0 120px;
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 350px;
+	}
+
+	&__img {
+		margin: 0 0 32px 0;
+		width: 72px;
+		height: 72px;
+	}
+
+	&__title {
+		font-family: $font-family-roboto-condensed;
+		text-align: center;
+		margin: 0 0 16px 0;
+	}
+
+	&__subtitle {
+		text-align: center;
+		margin: 0 0 32px 0;
+	}
+
+
+}

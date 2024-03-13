@@ -1,0 +1,39 @@
+-
+	var steps = [
+		{
+			stepName: 'Получаем запрос от клиента',
+			stepText: '',
+		},
+		{
+			stepName: 'Организуем поиск и делаем расчет доставки необходимого товара под ключ',
+			stepText: '',
+		},
+		{
+			stepName: 'Если клиента устраивает цена и сроки, то подписываем договор',
+			stepText: '',
+		},
+		{
+			stepName: 'Заключаем договор на перевозку и подбираем транспорт под ваш груз',
+			stepText: 'Везем продукцию напрямую с заводов изготовителей с минимальной наценкой. Работаем с «ПЭК», «Деловые Линии» и «Росжелдор». Вы можете выбрать любую траспортную компанию для доставки груза с нашего склада или вывезти его своими силами.',
+		},
+		{
+			stepName: 'Получаем предоплату за товар',
+			stepText: '',
+		},
+		{
+			stepName: 'Организовываем доставку груза',
+			stepText: '',
+		}
+	]
+// section-procedure
+section.section-procedure
+	.container
+		h2.h2.section-procedure__title Как мы работаем
+		.section-procedure__steps
+			for step, index in steps
+				.section-procedure__step
+					.section-procedure__step-number.button-text-m= index+1
+					.section-procedure__step-info
+						h3.h3.section-procedure__step-title= step.stepName
+						if (step.stepText)
+							p.section-procedure__step-text.text-m= step.stepText

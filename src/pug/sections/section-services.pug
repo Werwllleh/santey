@@ -1,0 +1,67 @@
+-
+	var services = [
+		{
+			about: 'Поставка химической продукции, ушедшей с Российского рынка',
+			text: '',
+			img: './images/services/services1.png'
+		},
+		{
+			about: 'Поиск альтернатив для товаров, ушедших с Российского рынка',
+			text: '',
+			img: './images/services/services2.png'
+		},
+		{
+			about: 'Поставка запчастей для строительной техники',
+			text: 'более 15 лет специализируемся на поставке широкого ассортимента запасных частей для грузовой, горной и дорожно-строительной техники.',
+			img: './images/services/services3.png',
+			img_mobile: './images/services/services3-mobile.png',
+		},
+		{
+			about: 'Организация поставок малогабаритных товаров',
+			text: '',
+			img: './images/services/services4.png'
+		},
+		{
+			about: 'Перевозки\n из стран Европы',
+			text: '',
+			img: './images/services/services5.png'
+		},
+		// {
+		// 	about: 'Качество услуг подтверждается сертификатом ISO 9001',
+		// 	text: '',
+		// 	img: './images/services/services6.png',
+		// 	img_mobile: './images/services/services6-mobile.png',
+		// },
+	]
+// section-services
+section.section-services#services
+	.container
+		h2.h2.section-services__title Оказываем весь комплекс транспортных и логистических услуг под ключ
+		.section-services-assortment
+			for item in services
+				a.section-services-assortment__card(href="#")(data-modal="request")
+					.section-services-assortment__card-info
+						h3.h3.section-services-assortment__card-title= item.about
+						if (item.text)
+							p.section-services-assortment__card-text.text-m-compact= item.text
+						.section-services-assortment__card-arrow
+							span
+								+svg("arrow-right")
+					if (item.img_mobile)
+						.section-services-assortment__card-image.section-services-assortment__card-image-desctop
+							img(src=item.img)
+						.section-services-assortment__card-image.section-services-assortment__card-image-mobile
+							img(src=item.img_mobile)
+					else
+						.section-services-assortment__card-image
+							img(src=item.img)
+			a#document.section-services-assortment__card
+				.section-services-assortment__card-info(href="./images/services/document-iso.jpg")
+					h3.h3.section-services-assortment__card-title Качество услуг подтверждается сертификатом ISO 9001
+					.section-services-assortment__card-arrow
+						span
+							+svg("arrow-right")
+					.section-services-assortment__card-image.section-services-assortment__card-image-desctop
+						img(src='./images/services/services6.png')
+					.section-services-assortment__card-image.section-services-assortment__card-image-mobile
+						img(src='./images/services/services6-mobile.png')

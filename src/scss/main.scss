@@ -1,0 +1,36 @@
+// stylelint-disable at-rule-empty-line-before
+
+
+
+@import "variables";
+@import "fonts";
+@import "colors";
+@import "functions";
+@import "mixins";
+@import "sprites";
+@import "vendor";
+//@import "helpers";
+@import "typography";
+@import "base";
+
+
+@import "components/header";
+@import "components/footer";
+@import "components/cards";
+
+@import "components/modals/index";
+
+
+@import "sections/section-primary";
+@import "sections/section-about";
+@import "sections/section-problems";
+@import "sections/section-partners";
+@import "sections/section-procedure";
+@import "sections/section-services";
+@import "sections/section-ask-question";
+@import "sections/section-orders";
+@import "sections/section-request";
+@import "pages/main";
+
+//@import "pages/home";
+

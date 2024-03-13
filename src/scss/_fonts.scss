@@ -1,0 +1,46 @@
+// stylelint-disable no-empty-source
+// @include font-face("../fonts/FontName/FontName", "FontName", 400, normal);
+
+@font-face {
+	src: url("../fonts/GolosText-Regular.woff2") format("woff2"),
+		url("../fonts/GolosText-Regular.woff") format("woff");
+	font-family: "Golos";
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/GolosText-Medium.woff2") format("woff2"), url("../resources/fonts/GolosText-Medium.woff") format("woff");
+	font-family: "Golos";
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../resources/fonts/Inter-SemiBold.woff") format("woff");
+	font-family: "Inter";
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/RobotoCondensed-Medium.woff2") format("woff2"), url("../resources/fonts/RobotoCondensed-Medium.woff") format("woff");
+	font-family: "Roboto Condensed";
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../resources/fonts/RobotoCondensed-Bold.woff") format("woff");
+	font-family: "Roboto Condensed";
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/SF Pro Text Semibold.woff2") format("woff2"), url("../resources/fonts/SF Pro Text Semibold.woff") format("woff");
+	font-family: "SF Pro";
+	font-weight: 600;
+	font-style: normal;
+}
+
